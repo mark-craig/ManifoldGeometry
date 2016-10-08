@@ -1,6 +1,6 @@
 ##RenderMan RIB
 #Created by RenderMan for Maya 20.7 (@1571626 Jan 26 2016)
-#Fri Oct 07 9:09:38 PM Pacific Daylight Time 2016
+#Fri Oct 07 9:50:48 PM Pacific Daylight Time 2016
 version 3.04
 Option "ribparse" "string varsubst" [""]
 Option "ribparse" "string varsubst" ["$"]
@@ -52,13 +52,13 @@ FrameBegin 1
 	Integrator "PxrPathTracer" "PxrPathTracer" "int maxPathLength" [10] "string sampleMode" ["bxdf"] "int numLightSamples" [8] "int numBxdfSamples" [8] "int numIndirectSamples" [1] "int numDiffuseSamples" [1] "int numSpecularSamples" [1] "int numSubsurfaceSamples" [1] "int numRefractionSamples" [1] "int rouletteDepth" [4] "float rouletteThreshold" [0.2] "string imagePlaneSubset" ["rman__imageplane"] "int clampDepth" [2] "float clampLuminance" [10] "int allowCaustics" [0]
 	Format 960 540 1
 	Option "user" "string[1] lightgroups" ["environment"]
-	Display "renderman/Eyeball/images/Eyeball" "it" "rgba" "string filter" ["gaussian"] "float[2] filterwidth" [2 2] "int[4] quantize" [0 0 0 0] "float dither" [0] "float[2] exposure" [1 1] "float[3] remap" [0 0 0] "string connection" ["-launchURI C:/Program%20Files/Pixar/RenderManStudio-20.7-maya2016/bin/it"] "string dspyParams" [" itOpenHandler {::ice::startTimer;};;; itCloseHandler {::ice::endTimer %arglist; };;; dspyRender -renderer preview -time 1 -crop 0 1 0 1 -port 49599 -context \"_preview\" -notes \"(Fri Oct 07 9:09:38 PM Pacific Daylight Time 2016)\nPxrPathTracer  MaxSamples 512  Mode bxdf  Light 8  Bsdf 8  Indir 1\""]
+	Display "renderman/Eyeball/images/Eyeball" "it" "rgba" "string filter" ["gaussian"] "float[2] filterwidth" [2 2] "int[4] quantize" [0 0 0 0] "float dither" [0] "float[2] exposure" [1 1] "float[3] remap" [0 0 0] "string connection" ["-launchURI C:/Program%20Files/Pixar/RenderManStudio-20.7-maya2016/bin/it"] "string dspyParams" [" itOpenHandler {::ice::startTimer;};;; itCloseHandler {::ice::endTimer %arglist; };;; dspyRender -renderer preview -time 1 -crop 0 1 0 1 -port 58987 -context \"_preview\" -notes \"(Fri Oct 07 9:50:48 PM Pacific Daylight Time 2016)\nPxrPathTracer  MaxSamples 512  Mode bxdf  Light 8  Bsdf 8  Indir 1\""]
 	#Camera perspShape
 	Clipping 0.1 10000
 	Projection "perspective" "fov" [54.4322]
 	ScreenWindow -1 1 -0.5625 0.5625
 	Shutter 0 0
-	ConcatTransform [ 0.989776 -0.0936888 0.107543 0  2.1927e-008 0.754003 0.656871 0  0.142629 0.650155 -0.746295 0  -0.00514943 -0.0234734 3.64795 1 ]
+	ConcatTransform [ -0.573577 0.0819036 0.815047 2.43024e-008  -9.2965e-010 -0.994989 0.0999858 3.44351e-009  -0.819152 -0.0573495 -0.570702 -1.97347e-008  0.398577 0.140149 3.76782 1 ]
 	Camera "world" "float[2] shutteropening" [0 1]
 	Option "user" "color camera_bg" [0 0 0] "float camera_bga" [0]
 	Imager "background" "color color" [0 0 0] "float alpha" [0]
@@ -74,9 +74,9 @@ FrameBegin 1
 			ShadingRate 1
 			Attribute "displacementbound" "string coordinatesystem" ["shader"] "float sphere" [0]
 			Attribute "photon" "string causticmap" [""] "string globalmap" [""]
-			Attribute "user" "string irRenderCam" ["false,-0.389412,-2.37853,2.73844"]
+			Attribute "user" "string irRenderCam" ["false,-2.85382,-0.237283,2.48484"]
 			Attribute "user" "string irRenderCamFOV" ["54.4322"]
-			Attribute "user" "string irRenderCamXform" ["0.989776,0,0.142629,0,-0.0936888,0.754003,0.650155,0,-0.107543,-0.656871,0.746294,0,-0.389412,-2.37853,2.73844,1"]
+			Attribute "user" "string irRenderCamXform" ["-0.573576,0,-0.819152,0,0.0819036,-0.994989,-0.0573495,0,-0.815047,-0.0999858,0.570702,0,-2.85382,-0.237283,2.48484,1"]
 			Attribute "user" "string irRenderCamRatio" ["1"]
 			AttributeBegin 
 				Attribute "identifier" "string name" ["PxrStdEnvDayLightShape1"]
@@ -84,11 +84,11 @@ FrameBegin 1
 				Transform [ 1 0 0 0  0 1 0 0  0 0 1 0  0 0 0 1 ]
 				Bxdf "PxrLightEmission" "visualizer" "string __instanceid" ["PxrStdEnvDayLightShape1_visualizer"]
 				IfBegin "!defined(user:shader_bindingstrength) || $user:shader_bindingstrength <= 0" 
-					Surface "renderman/Eyeball/shaders/PxrStdEnvDayLightShape1_rfm" "string rman__Shape" ["envday"] "float rman__LightPrimaryVisibility" [1] "string coordSys" ["shader"] "float exposure" [2.08029] "color sunTint" [1 1 1] "float sunSize" [1] "float method" [0] "vector directionVector" [0.1 1 0.1] "float month" [11] 
+					Surface "renderman/Eyeball/shaders/PxrStdEnvDayLightShape1_rfm" "string rman__Shape" ["envday"] "float rman__LightPrimaryVisibility" [1] "string coordSys" ["shader"] "float exposure" [3.32117] "color sunTint" [1 1 1] "float sunSize" [1] "float method" [0] "vector directionVector" [0.1 1 0.1] "float month" [11] 
 						"float day" [20] "float year" [2014] "float hour" [14.6333] "float zone" [-8] "float latitude" [47.6019] "float longitude" [-122.332] "float haziness" [2] "color skyTint" [1 1 1] "color specAmount" [1 1 1] 
 						"color diffAmount" [1 1 1] "float fixedSampleCount" [-1] "float importance" [1] "float enableShadows" [1] "color shadowColor" [0 0 0] "float adaptiveShadows" [1] "float shadowMaxDist" [-1] "float shadowTraceBias" [-1] 
 						"string shadowSubset" [""] "string shadowExcludeSubset" [""] "string __group" ["environment"] "float intensity" [1] "__instanceid" ["renderman/Eyeball/shaders/PxrStdEnvDayLightShape1_rfm_0"]
-					AreaLightSource "renderman/Eyeball/shaders/PxrStdEnvDayLightShape1_rfm" "PxrStdEnvDayLightShape1" "string rman__Shape" ["envday"] "float rman__LightPrimaryVisibility" [1] "string coordSys" ["shader"] "float exposure" [2.08029] "color sunTint" [1 1 1] "float sunSize" [1] "float method" [0] "vector directionVector" [0.1 1 0.1] "float month" [11] 
+					AreaLightSource "renderman/Eyeball/shaders/PxrStdEnvDayLightShape1_rfm" "PxrStdEnvDayLightShape1" "string rman__Shape" ["envday"] "float rman__LightPrimaryVisibility" [1] "string coordSys" ["shader"] "float exposure" [3.32117] "color sunTint" [1 1 1] "float sunSize" [1] "float method" [0] "vector directionVector" [0.1 1 0.1] "float month" [11] 
 						"float day" [20] "float year" [2014] "float hour" [14.6333] "float zone" [-8] "float latitude" [47.6019] "float longitude" [-122.332] "float haziness" [2] "color skyTint" [1 1 1] "color specAmount" [1 1 1] 
 						"color diffAmount" [1 1 1] "float fixedSampleCount" [-1] "float importance" [1] "float enableShadows" [1] "color shadowColor" [0 0 0] "float adaptiveShadows" [1] "float shadowMaxDist" [-1] "float shadowTraceBias" [-1] 
 						"string shadowSubset" [""] "string shadowExcludeSubset" [""] "string __group" ["environment"] "float intensity" [1] "__instanceid" ["renderman/Eyeball/shaders/PxrStdEnvDayLightShape1_rfm_0"]
@@ -121,7 +121,7 @@ FrameBegin 1
 				AttributeBegin 
 					Attribute "identifier" "string name" ["Outer_Eye"]
 					Attribute "identifier" "float id" [3]
-					ConcatTransform [ 1 0 0 0  0 -4.44089e-016 1 0  0 -1 -4.44089e-016 0  0 0 0 1 ]
+					ConcatTransform [ 1.06145 0 0 0  0 -4.71378e-016 1.06145 0  0 -1.06145 -4.71378e-016 0  0 0 0 1 ]
 					AttributeBegin 
 						AttributeBegin 
 							Attribute "identifier" "string name" ["Outer_EyeShape"]
@@ -142,7 +142,7 @@ FrameBegin 1
 				AttributeBegin 
 					Attribute "identifier" "string name" ["Inner_Eye"]
 					Attribute "identifier" "float id" [2]
-					ConcatTransform [ 0.95089 0 0 0  0 -3.75518e-016 0.845591 0  0 -0.95089 -4.2228e-016 0  0 0 0 1 ]
+					ConcatTransform [ 0.928251 0 0 0  0 -3.75518e-016 0.845591 0  0 -0.928251 -4.12226e-016 0  0 0 0 1 ]
 					AttributeBegin 
 						AttributeBegin 
 							Attribute "identifier" "string name" ["Inner_EyeShape"]
@@ -171,5 +171,5 @@ FrameBegin 1
 			##RLF ScopeEnd -name perspShape_RerenderRIS
 		WorldEnd 
 	ResourceEnd 
-	##streammarker 119
+	##streammarker 3773
 FrameEnd 

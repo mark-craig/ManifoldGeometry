@@ -5,7 +5,7 @@
 version 3.04
 IfBegin "!defined(user:shader_bindingstrength) || $user:shader_bindingstrength <= 0" 
 	Displacement "null" 
-	Bxdf "PxrDisney" "Eye_Iris" "color baseColor" [0.0286221 0.00341427 0.00130302] "color emitColor" [0.0221245 0.0221245 0.0221245] "float subsurface" [0] "color subsurfaceColor" [0 0 0] "float metallic" [0] "float specular" [0.0218978] 
+	Bxdf "PxrDisney" "Eye_Iris" "color baseColor" [0.177205 0.0114484 0.00322835] "color emitColor" [0 0 0] "float subsurface" [0] "color subsurfaceColor" [0 0 0] "float metallic" [0] "float specular" [0.0218978] 
 		"float specularTint" [0] "float roughness" [0.25] "float anisotropic" [0] "float sheen" [0] "float sheenTint" [0.5] "float clearcoat" [0] "float clearcoatGloss" [1] "normal bumpNormal" [0 0 0] "float presence" [1] "int inputAOV" [0] "__instanceid" ["Eye_Iris_0"]
 	VPInterior "null" 
 	Interior "null" 
@@ -16,7 +16,7 @@ Resource "PxrDisney2SG" "attributes" "string operation" ["save"] "string subset"
 version 3.04
 IfBegin "!defined(user:shader_bindingstrength) || $user:shader_bindingstrength <= 0" 
 	Displacement "null" 
-	Bxdf "PxrDisney" "Eye_White" "color baseColor" [0.591176 0.603827 0.480553] "color emitColor" [0 0 0] "float subsurface" [0] "color subsurfaceColor" [0 0 0] "float metallic" [0] "float specular" [0] 
+	Bxdf "PxrDisney" "Eye_White" "color baseColor" [0.645846 0.659702 0.524707] "color emitColor" [0 0 0] "float subsurface" [0] "color subsurfaceColor" [0 0 0] "float metallic" [0] "float specular" [0.145985] 
 		"float specularTint" [0] "float roughness" [0.25] "float anisotropic" [0] "float sheen" [0] "float sheenTint" [0.5] "float clearcoat" [0] "float clearcoatGloss" [1] "normal bumpNormal" [0 0 0] "float presence" [1] "int inputAOV" [0] "__instanceid" ["Eye_White_0"]
 	VPInterior "null" 
 	Interior "null" 
@@ -28,7 +28,7 @@ Resource "PxrDisney1SG" "attributes" "string operation" ["save"] "string subset"
 version 3.04
 IfBegin "!defined(user:shader_bindingstrength) || $user:shader_bindingstrength <= 0" 
 	Displacement "null" 
-	Bxdf "PxrLMGlass" "PxrLMGlass1" "int thin" [1] "float eta" [1.5] "color reflectionColor" [1 1 1] "color refractionColor" [0.603827 0.603827 0.603827] "float roughness" [0.01] "float absorption" [0] "color transmissionColor" [0.214041 0.214041 0.214041] 
+	Bxdf "PxrLMGlass" "PxrLMGlass1" "int thin" [0] "float eta" [1.0793] "color reflectionColor" [1 1 1] "color refractionColor" [1 1 1] "float roughness" [0] "float absorption" [0] "color transmissionColor" [0.214041 0.214041 0.214041] 
 		"int shadows" [0] "normal bumpNormal" [0 0 0] "float presence" [1] "int inputAOV" [0] "__instanceid" ["PxrLMGlass1_0"]
 	VPInterior "null" 
 	Interior "null" 
