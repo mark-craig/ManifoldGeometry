@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<RenderManLookFile Version="1" Format="RenderMan Look Data" AssemblyName="perspShape_RerenderRIS">
+    <InjectablePayloads>
+        <Payload Id="PxrDisney1SG" Label="" Source="1" Content="1"><![CDATA[##RenderMan RIB
+version 3.04
+IfBegin "!defined(user:shader_bindingstrength) || $user:shader_bindingstrength <= 0" 
+	Displacement "null" 
+	Pattern "PxrMayaPlacement2d" "place2dTexture2" "float[2] coverage" [1 1] "float[2] translateFrame" [0 0] "float rotateFrame" [0] "int mirrorU" [0] "int mirrorV" [0] "int stagger" [0] "int wrapU" [1] "int wrapV" [1] "float[2] repeatUV" [1 1] "float[2] offset" [0 0] "float rotateUV" [0] 
+		"float[2] noiseUV" [0 0] "__instanceid" ["place2dTexture2_0"]
+	Pattern "PxrMayaPlacement2d" "place2dTexture4" "float[2] coverage" [1 1] "float[2] translateFrame" [0 0] "float rotateFrame" [0] "int mirrorU" [0] "int mirrorV" [0] "int stagger" [0] "int wrapU" [1] "int wrapV" [1] "float[2] repeatUV" [1 1] "float[2] offset" [0 0] "float rotateUV" [0] 
+		"float[2] noiseUV" [0 0] "__instanceid" ["place2dTexture4_0"]
+	Pattern "PxrMayaPlacement2d" "place2dTexture1" "float[2] coverage" [1 1] "float[2] translateFrame" [0 0] "float rotateFrame" [0] "int mirrorU" [0] "int mirrorV" [0] "int stagger" [0] "int wrapU" [1] "int wrapV" [1] "float[2] repeatUV" [1 1] "float[2] offset" [0 0] "float rotateUV" [0] 
+		"float[2] noiseUV" [0 0] "__instanceid" ["place2dTexture1_0"]
+	Pattern "PxrMayaNoise" "noise2" "float threshold" [0] "float amplitude" [1] "float ratio" [0.707] "float frequencyRatio" [2] "int depthMax" [3] "int inflection" [0] "float time" [0] "float frequency" [8] "float implode" [0] "float[2] implodeCenter" [0.5 0.5] "int noiseType" [1] "float density" [1] "float spottyness" [0.1] 
+		"float sizeRand" [0] "float randomness" [1] "int falloff" [2] "color defaultColor" [0.214041 0.214041 0.214041] "color colorGain" [1 1 1] "color colorOffset" [0 0 0] "float alphaGain" [1] 
+		"float alphaOffset" [0] "int alphaIsLuminance" [0] "float filter" [1] "float filterOffset" [0] "int invert" [0] "reference struct manifold" ["place2dTexture4:result"] "__instanceid" ["noise2_0"]
+	Pattern "PxrMayaFile" "file1" "string fileTextureName" ["renderman/textures/job/Texture test 2.png.tex"] "int colorProfile" [0] "string colorSpace" ["sRGB"] "int colorManagementEnabled" [1] "float preFilter" [0] "float preFilterRadius" [2] "float filterType" [3] "int useFrameExtension" [0] "int frameExtension" [1] "int frameOffset" [0] "int spriteNum" [-9999] "float __faceindex" [0] "color defaultColor" [0.214041 0.214041 0.214041] "color colorGain" [1 1 1] 
+		"color colorOffset" [0 0 0] "float alphaGain" [1] "float alphaOffset" [0] "int alphaIsLuminance" [0] "float filter" [1] "float filterOffset" [0] "int invert" [0] "reference struct manifold" ["place2dTexture1:result"] "string rman__tx2dFilter" ["1"] "float rman__tx2dSwidth" [1] "float rman__tx2dTwidth" [1] "int rman__tx2dLerp" [0] "int rman__applysRGB" [-1] 
+		"string rman__udim" ["none"] "int rman__unpremultiply" [0] "__instanceid" ["file1_0"]
+	Pattern "PxrToFloat3" "contrast2_value" "float input" [0] "reference float inputR" ["noise2:outAlpha"] "float inputG" [0] "float inputB" [0] "__instanceid" ["contrast2_value_0"]
+	Pattern "PxrMayaFile" "file2" "string fileTextureName" ["renderman/textures/job/Texture test bump 2.png.tex"] "int colorProfile" [0] "string colorSpace" ["sRGB"] "int colorManagementEnabled" [1] "float preFilter" [0] "float preFilterRadius" [2] "float filterType" [3] "int useFrameExtension" [0] "int frameExtension" [1] "int frameOffset" [0] "int spriteNum" [-9999] "float __faceindex" [0] "color defaultColor" [0.214041 0.214041 0.214041] "color colorGain" [1 1 1] 
+		"color colorOffset" [0 0 0] "float alphaGain" [1] "float alphaOffset" [0] "int alphaIsLuminance" [1] "float filter" [1] "float filterOffset" [0] "int invert" [0] "reference struct manifold" ["place2dTexture2:result"] "string rman__tx2dFilter" ["1"] "float rman__tx2dSwidth" [1] "float rman__tx2dTwidth" [1] "int rman__tx2dLerp" [0] "int rman__applysRGB" [-1] 
+		"string rman__udim" ["none"] "int rman__unpremultiply" [0] "__instanceid" ["file2_0"]
+	Pattern "PxrSeExpr" "contrast2" "reference vector value" ["contrast2_value:resultRGB"] "vector contrast" [2.5 2 2] "vector bias" [0.5 0.5 0.5] "string expression" ["resultRGB = contrast(bias(value,1-bias),contrast*.25); resultRGB"] "__instanceid" ["contrast2_0"]
+	Pattern "PxrToFloat" "contrast2_outValue_0" "reference color input" ["contrast2:resultRGB"] "int mode" [0] "__instanceid" ["contrast2_outValue_0_0"]
+	Pattern "PxrToFloat3" "PxrMix3_color1" "float input" [0] "reference float inputR" ["contrast2_outValue_0:resultF"] "reference float inputG" ["contrast2_outValue_0:resultF"] "reference float inputB" ["contrast2_outValue_0:resultF"] "__instanceid" ["PxrMix3_color1_0"]
+	Pattern "PxrMix" "PxrMix3" "reference color color1" ["PxrMix3_color1:resultRGB"] "reference color color2" ["file2:outColor"] "float mix" [0.191011] "__instanceid" ["PxrMix3_0"]
+	Pattern "PxrBump" "PxrBump4" "float scale" [0.1] "int disable" [0] "reference float inputBump" ["PxrMix3:resultB"] "string filename" [""] "int firstChannel" [0] "int atlasStyle" [0] "int invertT" [1] "float blur" [0] "int lerp" [1] "normal inputN" [1 0 0] "int reverse" [0] "__instanceid" ["PxrBump4_0"]
+	Pattern "PxrToFloat3" "PxrRemap1_inputRGB" "float input" [0] "float inputR" [1] "float inputG" [1] "reference float inputB" ["PxrMix3:resultB"] "__instanceid" ["PxrRemap1_inputRGB_0"]
+	Pattern "PxrRemap" "PxrRemap1" "reference color inputRGB" ["PxrRemap1_inputRGB:resultRGB"] "float inputMin" [0] "float inputMax" [1] "int clampInput" [1] "color bias" [0.544669 0.544669 0.544669] "color gain" [0.214041 0.214041 0.214041] "float outputMin" [0] "float outputMax" [1] "int clampOutput" [1] "__instanceid" ["PxrRemap1_0"]
+	Bxdf "PxrDisney" "Brick_shader" "reference color baseColor" ["file1:outColor"] "color emitColor" [0 0 0] "float subsurface" [0.4] "color subsurfaceColor" [0.323235 0.174728 0.114083] "float metallic" [0] "reference float specular" ["PxrRemap1:resultB"] "float specularTint" [0] "float roughness" [0.665] "float anisotropic" [0] 
+		"float sheen" [0] "float sheenTint" [0.5] "float clearcoat" [0] "float clearcoatGloss" [1] "reference normal bumpNormal" ["PxrBump4:resultN"] "float presence" [1] "int inputAOV" [0] "__instanceid" ["Brick_shader_0"]
+	VPInterior "null" 
+	Interior "null" 
+	Attribute "user" "int shader_bindingstrength" [0]
+IfEnd 
+]]></Payload>
+    </InjectablePayloads>
+    <TightBindings>
+        <Binding Key="pCube1/pCubeShape1" PayloadId="PxrDisney1SG"/>
+    </TightBindings>
+</RenderManLookFile>
