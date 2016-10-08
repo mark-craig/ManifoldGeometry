@@ -1,6 +1,6 @@
 //Maya ASCII 2016R2 scene
 //Name: Scene 1 - Real.ma
-//Last modified: Sat, Oct 08, 2016 11:46:58 AM
+//Last modified: Sat, Oct 08, 2016 12:02:14 PM
 //Codeset: 1252
 file -rdi 1 -ns "main_scene_2" -rfn "main_scene_2RN" -op "v=0;" -typ "mayaAscii"
 		 "C:/Users/Arthur/Documents/Animation/ManifoldGeometry/Project Files//scenes/main_scene_2.ma";
@@ -47,14 +47,14 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "0234EA64-4B9E-E523-AD8C-55902C517B12";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 4.929638602132056 4.9929069160047286 9.6152639685283638 ;
+	setAttr ".t" -type "double3" 3.5608784720875599 10.448307838261353 23.090456374696451 ;
 	setAttr ".r" -type "double3" -21.938352729583737 -5.8000000000006446 7.9923016227940318e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "21E4B52F-4BFD-5081-36C2-6EBD0233F43B";
 	setAttr -k off ".v" no;
 	setAttr ".ovr" 1.3;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 7.3117732318053568;
+	setAttr ".coi" 21.91368111740049;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -4367,23 +4367,23 @@ createNode RenderMan -s -n "rmanSBMakePtexGlobals";
 	setAttr ".rman__param__ptxmake___channel" -type "string" "$BAKECHAN";
 	setAttr ".rman__param__ptxmake___outputfile" -type "string" "[passinfo this filename]";
 createNode lightLinker -s -n "lightLinker1";
-	rename -uid "29355FDA-4D70-FB97-F1A9-A9B8BCFCD579";
+	rename -uid "DA76BB7C-414B-0C8D-A37C-EEA00FFEA653";
 	setAttr -s 84 ".lnk";
 	setAttr -s 84 ".slnk";
 createNode shapeEditorManager -n "shapeEditorManager";
-	rename -uid "698B83B7-4E5A-F021-CF3E-D1914F079936";
+	rename -uid "C00C60AF-45B0-33C5-EE2F-ACA7BE5819E0";
 	setAttr ".bsdt[0].bscd" -type "Int32Array" 6 0 1 2 4 5
 		 3 ;
 	setAttr -s 6 ".bspr";
 	setAttr -s 6 ".obsv";
 createNode poseInterpolatorManager -n "poseInterpolatorManager";
-	rename -uid "53CD06E3-43B8-2EE7-7EF9-6DABBCAC9DA1";
+	rename -uid "E6A98FB7-46F1-AE1C-78B1-398C1E3A43AF";
 createNode displayLayerManager -n "layerManager";
-	rename -uid "7B02D26A-497B-BB61-C3E8-148B148A3D36";
+	rename -uid "420AD4CA-4550-6B1D-2430-02AF1D83F02F";
 createNode displayLayer -n "defaultLayer";
 	rename -uid "F1B02A71-4A9B-6420-1E56-B5880A21D1EE";
 createNode renderLayerManager -n "renderLayerManager";
-	rename -uid "A69CAC4F-4E59-C937-3096-309A98B5D81F";
+	rename -uid "EFA3F972-4757-4B8A-ECEB-8E94F568B0B4";
 createNode renderLayer -n "defaultRenderLayer";
 	rename -uid "5EC8FF49-4D14-9743-3D11-6C946F2A3D99";
 	setAttr ".g" yes;
@@ -4646,219 +4646,7 @@ createNode mentalrayFramebuffer -s -n "miDefaultFramebuffer";
 	rename -uid "9647E5C1-4E35-F077-F8C1-9D86613EAC45";
 createNode reference -n "main_scene_2RN";
 	rename -uid "657C5334-42BB-86FC-4CD9-BF87988581DA";
-	setAttr -s 305 ".phl";
-	setAttr ".phl[119]" 0;
-	setAttr ".phl[131]" 0;
-	setAttr ".phl[133]" 0;
-	setAttr ".phl[134]" 0;
-	setAttr ".phl[135]" 0;
-	setAttr ".phl[136]" 0;
-	setAttr ".phl[137]" 0;
-	setAttr ".phl[138]" 0;
-	setAttr ".phl[139]" 0;
-	setAttr ".phl[140]" 0;
-	setAttr ".phl[141]" 0;
-	setAttr ".phl[142]" 0;
-	setAttr ".phl[143]" 0;
-	setAttr ".phl[144]" 0;
-	setAttr ".phl[145]" 0;
-	setAttr ".phl[146]" 0;
-	setAttr ".phl[147]" 0;
-	setAttr ".phl[148]" 0;
-	setAttr ".phl[149]" 0;
-	setAttr ".phl[150]" 0;
-	setAttr ".phl[151]" 0;
-	setAttr ".phl[152]" 0;
-	setAttr ".phl[153]" 0;
-	setAttr ".phl[154]" 0;
-	setAttr ".phl[155]" 0;
-	setAttr ".phl[156]" 0;
-	setAttr ".phl[157]" 0;
-	setAttr ".phl[158]" 0;
-	setAttr ".phl[159]" 0;
-	setAttr ".phl[160]" 0;
-	setAttr ".phl[161]" 0;
-	setAttr ".phl[162]" 0;
-	setAttr ".phl[163]" 0;
-	setAttr ".phl[164]" 0;
-	setAttr ".phl[165]" 0;
-	setAttr ".phl[166]" 0;
-	setAttr ".phl[167]" 0;
-	setAttr ".phl[168]" 0;
-	setAttr ".phl[169]" 0;
-	setAttr ".phl[170]" 0;
-	setAttr ".phl[171]" 0;
-	setAttr ".phl[172]" 0;
-	setAttr ".phl[173]" 0;
-	setAttr ".phl[174]" 0;
-	setAttr ".phl[175]" 0;
-	setAttr ".phl[176]" 0;
-	setAttr ".phl[177]" 0;
-	setAttr ".phl[178]" 0;
-	setAttr ".phl[179]" 0;
-	setAttr ".phl[180]" 0;
-	setAttr ".phl[181]" 0;
-	setAttr ".phl[182]" 0;
-	setAttr ".phl[183]" 0;
-	setAttr ".phl[184]" 0;
-	setAttr ".phl[185]" 0;
-	setAttr ".phl[186]" 0;
-	setAttr ".phl[187]" 0;
-	setAttr ".phl[188]" 0;
-	setAttr ".phl[189]" 0;
-	setAttr ".phl[190]" 0;
-	setAttr ".phl[191]" 0;
-	setAttr ".phl[192]" 0;
-	setAttr ".phl[193]" 0;
-	setAttr ".phl[194]" 0;
-	setAttr ".phl[195]" 0;
-	setAttr ".phl[196]" 0;
-	setAttr ".phl[197]" 0;
-	setAttr ".phl[198]" 0;
-	setAttr ".phl[199]" 0;
-	setAttr ".phl[200]" 0;
-	setAttr ".phl[201]" 0;
-	setAttr ".phl[202]" 0;
-	setAttr ".phl[203]" 0;
-	setAttr ".phl[204]" 0;
-	setAttr ".phl[205]" 0;
-	setAttr ".phl[206]" 0;
-	setAttr ".phl[207]" 0;
-	setAttr ".phl[208]" 0;
-	setAttr ".phl[209]" 0;
-	setAttr ".phl[210]" 0;
-	setAttr ".phl[211]" 0;
-	setAttr ".phl[212]" 0;
-	setAttr ".phl[213]" 0;
-	setAttr ".phl[214]" 0;
-	setAttr ".phl[215]" 0;
-	setAttr ".phl[216]" 0;
-	setAttr ".phl[217]" 0;
-	setAttr ".phl[218]" 0;
-	setAttr ".phl[219]" 0;
-	setAttr ".phl[220]" 0;
-	setAttr ".phl[221]" 0;
-	setAttr ".phl[222]" 0;
-	setAttr ".phl[223]" 0;
-	setAttr ".phl[224]" 0;
-	setAttr ".phl[225]" 0;
-	setAttr ".phl[226]" 0;
-	setAttr ".phl[227]" 0;
-	setAttr ".phl[228]" 0;
-	setAttr ".phl[229]" 0;
-	setAttr ".phl[230]" 0;
-	setAttr ".phl[231]" 0;
-	setAttr ".phl[232]" 0;
-	setAttr ".phl[233]" 0;
-	setAttr ".phl[234]" 0;
-	setAttr ".phl[235]" 0;
-	setAttr ".phl[236]" 0;
-	setAttr ".phl[237]" 0;
-	setAttr ".phl[238]" 0;
-	setAttr ".phl[239]" 0;
-	setAttr ".phl[240]" 0;
-	setAttr ".phl[241]" 0;
-	setAttr ".phl[242]" 0;
-	setAttr ".phl[243]" 0;
-	setAttr ".phl[244]" 0;
-	setAttr ".phl[245]" 0;
-	setAttr ".phl[246]" 0;
-	setAttr ".phl[247]" 0;
-	setAttr ".phl[248]" 0;
-	setAttr ".phl[249]" 0;
-	setAttr ".phl[250]" 0;
-	setAttr ".phl[251]" 0;
-	setAttr ".phl[252]" 0;
-	setAttr ".phl[253]" 0;
-	setAttr ".phl[254]" 0;
-	setAttr ".phl[255]" 0;
-	setAttr ".phl[256]" 0;
-	setAttr ".phl[257]" 0;
-	setAttr ".phl[258]" 0;
-	setAttr ".phl[259]" 0;
-	setAttr ".phl[260]" 0;
-	setAttr ".phl[261]" 0;
-	setAttr ".phl[262]" 0;
-	setAttr ".phl[263]" 0;
-	setAttr ".phl[264]" 0;
-	setAttr ".phl[265]" 0;
-	setAttr ".phl[266]" 0;
-	setAttr ".phl[267]" 0;
-	setAttr ".phl[268]" 0;
-	setAttr ".phl[269]" 0;
-	setAttr ".phl[270]" 0;
-	setAttr ".phl[271]" 0;
-	setAttr ".phl[272]" 0;
-	setAttr ".phl[273]" 0;
-	setAttr ".phl[274]" 0;
-	setAttr ".phl[275]" 0;
-	setAttr ".phl[276]" 0;
-	setAttr ".phl[277]" 0;
-	setAttr ".phl[278]" 0;
-	setAttr ".phl[279]" 0;
-	setAttr ".phl[280]" 0;
-	setAttr ".phl[281]" 0;
-	setAttr ".phl[282]" 0;
-	setAttr ".phl[283]" 0;
-	setAttr ".phl[284]" 0;
-	setAttr ".phl[285]" 0;
-	setAttr ".phl[286]" 0;
-	setAttr ".phl[287]" 0;
-	setAttr ".phl[288]" 0;
-	setAttr ".phl[289]" 0;
-	setAttr ".phl[290]" 0;
-	setAttr ".phl[291]" 0;
-	setAttr ".phl[292]" 0;
-	setAttr ".phl[293]" 0;
-	setAttr ".phl[294]" 0;
-	setAttr ".phl[295]" 0;
-	setAttr ".phl[296]" 0;
-	setAttr ".phl[297]" 0;
-	setAttr ".phl[298]" 0;
-	setAttr ".phl[299]" 0;
-	setAttr ".phl[300]" 0;
-	setAttr ".phl[301]" 0;
-	setAttr ".phl[302]" 0;
-	setAttr ".phl[303]" 0;
-	setAttr ".phl[304]" 0;
-	setAttr ".phl[305]" 0;
-	setAttr ".phl[306]" 0;
-	setAttr ".phl[307]" 0;
-	setAttr ".phl[308]" 0;
-	setAttr ".phl[309]" 0;
-	setAttr ".phl[310]" 0;
-	setAttr ".phl[311]" 0;
-	setAttr ".phl[312]" 0;
-	setAttr ".phl[313]" 0;
-	setAttr ".phl[314]" 0;
-	setAttr ".phl[315]" 0;
-	setAttr ".phl[316]" 0;
-	setAttr ".phl[317]" 0;
-	setAttr ".phl[318]" 0;
-	setAttr ".phl[319]" 0;
-	setAttr ".phl[320]" 0;
-	setAttr ".phl[321]" 0;
-	setAttr ".phl[322]" 0;
-	setAttr ".phl[323]" 0;
-	setAttr ".phl[324]" 0;
-	setAttr ".phl[325]" 0;
-	setAttr ".phl[326]" 0;
-	setAttr ".phl[327]" 0;
-	setAttr ".phl[328]" 0;
-	setAttr ".phl[329]" 0;
-	setAttr ".phl[330]" 0;
-	setAttr ".phl[331]" 0;
-	setAttr ".phl[332]" 0;
-	setAttr ".phl[333]" 0;
-	setAttr ".phl[334]" 0;
-	setAttr ".phl[335]" 0;
-	setAttr ".phl[336]" 0;
-	setAttr ".phl[337]" 0;
-	setAttr ".phl[338]" 0;
-	setAttr ".phl[339]" 0;
-	setAttr ".phl[340]" 0;
-	setAttr ".phl[341]" 0;
-	setAttr ".phl[342]" 0;
+	setAttr -s 304 ".phl";
 	setAttr ".phl[343]" 0;
 	setAttr ".phl[344]" 0;
 	setAttr ".phl[345]" 0;
@@ -4950,320 +4738,533 @@ createNode reference -n "main_scene_2RN";
 	setAttr ".phl[431]" 0;
 	setAttr ".phl[432]" 0;
 	setAttr ".phl[433]" 0;
+	setAttr ".phl[434]" 0;
+	setAttr ".phl[435]" 0;
+	setAttr ".phl[436]" 0;
+	setAttr ".phl[437]" 0;
+	setAttr ".phl[438]" 0;
+	setAttr ".phl[439]" 0;
+	setAttr ".phl[440]" 0;
+	setAttr ".phl[441]" 0;
+	setAttr ".phl[442]" 0;
+	setAttr ".phl[443]" 0;
+	setAttr ".phl[444]" 0;
+	setAttr ".phl[445]" 0;
+	setAttr ".phl[446]" 0;
+	setAttr ".phl[447]" 0;
+	setAttr ".phl[448]" 0;
+	setAttr ".phl[449]" 0;
+	setAttr ".phl[450]" 0;
+	setAttr ".phl[451]" 0;
+	setAttr ".phl[452]" 0;
+	setAttr ".phl[453]" 0;
+	setAttr ".phl[454]" 0;
+	setAttr ".phl[455]" 0;
+	setAttr ".phl[456]" 0;
+	setAttr ".phl[457]" 0;
+	setAttr ".phl[458]" 0;
+	setAttr ".phl[459]" 0;
+	setAttr ".phl[460]" 0;
+	setAttr ".phl[461]" 0;
+	setAttr ".phl[462]" 0;
+	setAttr ".phl[463]" 0;
+	setAttr ".phl[464]" 0;
+	setAttr ".phl[465]" 0;
+	setAttr ".phl[466]" 0;
+	setAttr ".phl[467]" 0;
+	setAttr ".phl[468]" 0;
+	setAttr ".phl[469]" 0;
+	setAttr ".phl[470]" 0;
+	setAttr ".phl[471]" 0;
+	setAttr ".phl[472]" 0;
+	setAttr ".phl[473]" 0;
+	setAttr ".phl[474]" 0;
+	setAttr ".phl[475]" 0;
+	setAttr ".phl[476]" 0;
+	setAttr ".phl[477]" 0;
+	setAttr ".phl[478]" 0;
+	setAttr ".phl[479]" 0;
+	setAttr ".phl[480]" 0;
+	setAttr ".phl[481]" 0;
+	setAttr ".phl[482]" 0;
+	setAttr ".phl[483]" 0;
+	setAttr ".phl[484]" 0;
+	setAttr ".phl[485]" 0;
+	setAttr ".phl[486]" 0;
+	setAttr ".phl[487]" 0;
+	setAttr ".phl[488]" 0;
+	setAttr ".phl[489]" 0;
+	setAttr ".phl[490]" 0;
+	setAttr ".phl[491]" 0;
+	setAttr ".phl[492]" 0;
+	setAttr ".phl[493]" 0;
+	setAttr ".phl[494]" 0;
+	setAttr ".phl[495]" 0;
+	setAttr ".phl[496]" 0;
+	setAttr ".phl[497]" 0;
+	setAttr ".phl[498]" 0;
+	setAttr ".phl[499]" 0;
+	setAttr ".phl[500]" 0;
+	setAttr ".phl[501]" 0;
+	setAttr ".phl[502]" 0;
+	setAttr ".phl[503]" 0;
+	setAttr ".phl[504]" 0;
+	setAttr ".phl[505]" 0;
+	setAttr ".phl[506]" 0;
+	setAttr ".phl[507]" 0;
+	setAttr ".phl[508]" 0;
+	setAttr ".phl[509]" 0;
+	setAttr ".phl[510]" 0;
+	setAttr ".phl[511]" 0;
+	setAttr ".phl[512]" 0;
+	setAttr ".phl[513]" 0;
+	setAttr ".phl[514]" 0;
+	setAttr ".phl[515]" 0;
+	setAttr ".phl[516]" 0;
+	setAttr ".phl[517]" 0;
+	setAttr ".phl[518]" 0;
+	setAttr ".phl[519]" 0;
+	setAttr ".phl[520]" 0;
+	setAttr ".phl[521]" 0;
+	setAttr ".phl[522]" 0;
+	setAttr ".phl[523]" 0;
+	setAttr ".phl[524]" 0;
+	setAttr ".phl[525]" 0;
+	setAttr ".phl[526]" 0;
+	setAttr ".phl[527]" 0;
+	setAttr ".phl[528]" 0;
+	setAttr ".phl[529]" 0;
+	setAttr ".phl[530]" 0;
+	setAttr ".phl[531]" 0;
+	setAttr ".phl[532]" 0;
+	setAttr ".phl[533]" 0;
+	setAttr ".phl[534]" 0;
+	setAttr ".phl[535]" 0;
+	setAttr ".phl[536]" 0;
+	setAttr ".phl[537]" 0;
+	setAttr ".phl[538]" 0;
+	setAttr ".phl[539]" 0;
+	setAttr ".phl[540]" 0;
+	setAttr ".phl[541]" 0;
+	setAttr ".phl[542]" 0;
+	setAttr ".phl[543]" 0;
+	setAttr ".phl[544]" 0;
+	setAttr ".phl[545]" 0;
+	setAttr ".phl[546]" 0;
+	setAttr ".phl[547]" 0;
+	setAttr ".phl[548]" 0;
+	setAttr ".phl[549]" 0;
+	setAttr ".phl[550]" 0;
+	setAttr ".phl[551]" 0;
+	setAttr ".phl[552]" 0;
+	setAttr ".phl[553]" 0;
+	setAttr ".phl[554]" 0;
+	setAttr ".phl[555]" 0;
+	setAttr ".phl[556]" 0;
+	setAttr ".phl[557]" 0;
+	setAttr ".phl[558]" 0;
+	setAttr ".phl[559]" 0;
+	setAttr ".phl[560]" 0;
+	setAttr ".phl[561]" 0;
+	setAttr ".phl[562]" 0;
+	setAttr ".phl[563]" 0;
+	setAttr ".phl[564]" 0;
+	setAttr ".phl[565]" 0;
+	setAttr ".phl[566]" 0;
+	setAttr ".phl[567]" 0;
+	setAttr ".phl[568]" 0;
+	setAttr ".phl[569]" 0;
+	setAttr ".phl[570]" 0;
+	setAttr ".phl[571]" 0;
+	setAttr ".phl[572]" 0;
+	setAttr ".phl[573]" 0;
+	setAttr ".phl[574]" 0;
+	setAttr ".phl[575]" 0;
+	setAttr ".phl[576]" 0;
+	setAttr ".phl[577]" 0;
+	setAttr ".phl[578]" 0;
+	setAttr ".phl[579]" 0;
+	setAttr ".phl[580]" 0;
+	setAttr ".phl[581]" 0;
+	setAttr ".phl[582]" 0;
+	setAttr ".phl[583]" 0;
+	setAttr ".phl[584]" 0;
+	setAttr ".phl[585]" 0;
+	setAttr ".phl[586]" 0;
+	setAttr ".phl[587]" 0;
+	setAttr ".phl[588]" 0;
+	setAttr ".phl[589]" 0;
+	setAttr ".phl[590]" 0;
+	setAttr ".phl[591]" 0;
+	setAttr ".phl[592]" 0;
+	setAttr ".phl[593]" 0;
+	setAttr ".phl[594]" 0;
+	setAttr ".phl[595]" 0;
+	setAttr ".phl[596]" 0;
+	setAttr ".phl[597]" 0;
+	setAttr ".phl[598]" 0;
+	setAttr ".phl[599]" 0;
+	setAttr ".phl[600]" 0;
+	setAttr ".phl[601]" 0;
+	setAttr ".phl[602]" 0;
+	setAttr ".phl[603]" 0;
+	setAttr ".phl[604]" 0;
+	setAttr ".phl[605]" 0;
+	setAttr ".phl[606]" 0;
+	setAttr ".phl[607]" 0;
+	setAttr ".phl[608]" 0;
+	setAttr ".phl[609]" 0;
+	setAttr ".phl[610]" 0;
+	setAttr ".phl[611]" 0;
+	setAttr ".phl[612]" 0;
+	setAttr ".phl[613]" 0;
+	setAttr ".phl[614]" 0;
+	setAttr ".phl[615]" 0;
+	setAttr ".phl[616]" 0;
+	setAttr ".phl[617]" 0;
+	setAttr ".phl[618]" 0;
+	setAttr ".phl[619]" 0;
+	setAttr ".phl[620]" 0;
+	setAttr ".phl[621]" 0;
+	setAttr ".phl[622]" 0;
+	setAttr ".phl[623]" 0;
+	setAttr ".phl[624]" 0;
+	setAttr ".phl[625]" 0;
+	setAttr ".phl[626]" 0;
+	setAttr ".phl[627]" 0;
+	setAttr ".phl[628]" 0;
+	setAttr ".phl[629]" 0;
+	setAttr ".phl[630]" 0;
+	setAttr ".phl[631]" 0;
+	setAttr ".phl[632]" 0;
+	setAttr ".phl[633]" 0;
+	setAttr ".phl[634]" 0;
+	setAttr ".phl[635]" 0;
+	setAttr ".phl[636]" 0;
+	setAttr ".phl[637]" 0;
+	setAttr ".phl[638]" 0;
+	setAttr ".phl[639]" 0;
+	setAttr ".phl[640]" 0;
+	setAttr ".phl[641]" 0;
+	setAttr ".phl[642]" 0;
+	setAttr ".phl[643]" 0;
+	setAttr ".phl[644]" 0;
+	setAttr ".phl[645]" 0;
+	setAttr ".phl[646]" 0;
 	setAttr ".ed" -type "dataReferenceEdits" 
 		"main_scene_2RN"
 		"main_scene_2:BrickyRN" 0
 		"main_scene_2:LilBro2RN" 0
-		"main_scene_2RN" 0
 		"main_scene_2:AnglesRN" 0
+		"main_scene_2RN" 0
 		"main_scene_2:RockyRN" 0
-		"main_scene_2:LilBro1RN" 2
-		5 0 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.compInstObjGroups.compObjectGroups[0]" 
-		"main_scene_2:PxrDisney5SG.dagSetMembers" "main_scene_2RN.placeHolderList[119]" "main_scene_2RN.placeHolderList[120]" 
-		""
-		5 0 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.compInstObjGroups.compObjectGroups[0]" 
-		"main_scene_2:PxrDisney5SG.dagSetMembers" "main_scene_2RN.placeHolderList[131]" "main_scene_2RN.placeHolderList[132]" 
-		""
+		"main_scene_2:LilBro1RN" 1
+		5 3 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L.instObjGroups" 
+		"main_scene_2RN.placeHolderList[342]" ""
 		"main_scene_2:StonyRN" 0
 		"main_scene_2:main_sceneRN" 0
-		"main_scene_2:BrickyRN" 85
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO" 
-		"translateY" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO" 
-		"translateY" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO" 
-		"rotate" " -type \"double3\" 87.583431369283844 0 0"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO" 
-		"rotateX" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_lower_GEO" 
+		"main_scene_2:BrickyRN" 86
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL" 
 		"visibility" " 1"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO" 
-		"rotate" " -type \"double3\" 88.428043905044518 0 0"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO" 
+		"translate" " -type \"double3\" 0 0.015082228254367546 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO" 
+		"translateY" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO" 
+		"translate" " -type \"double3\" 0 0.015082228254367546 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO" 
+		"translateY" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO" 
+		"rotate" " -type \"double3\" 13.755379490173386 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO" 
 		"rotateX" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_lower_GEO" 
+		"visibility" " 1"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO" 
+		"rotate" " -type \"double3\" 12.795957604994697 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO" 
+		"rotateX" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO" 
 		"visibility" " -av 1"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO" 
 		"scale" " -type \"double3\" 1 1 1"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_rt_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_rt_GEO" 
 		"rotate" " -type \"double3\" 0 -6.0092336036627512e-007 -6.811573186069439e-010"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_rt_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_rt_GEO" 
 		"rotateX" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_rt_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_rt_GEO" 
 		"rotateY" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_rt_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_rt_GEO" 
 		"rotateZ" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO" 
-		"scale" " -type \"double3\" 0.5 0.5 0.5"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO" 
+		"scale" " -type \"double3\" 1 0.5 1"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO" 
 		"scaleX" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO" 
 		"scaleY" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO" 
 		"scaleZ" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO|main_scene_2:Bricky:mouth_GEOShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO|main_scene_2:Bricky:mouth_GEOShape" 
 		"pt[0:55]" (" -s 56 -type \"float3\" 0.38652175999999999 -0.19706334 0.26744162999999999 0.17321669000000001 -0.20204262000000001 0.20804274 -0.1732167 -0.20204262000000001 0.20804274 -0.38652175999999999 -0.19706334 0.26744162999999999 0.51965015999999997 -0.18908501 0.36261415000000002 0.17321669000000001 -0.18908501 0.36261415000000002 -0.1732167 -0.18908501 0.36261415000000002 -0.51965015999999997 -0.18908501 0.36261415000000002 0.51965015999999997 -0.17612775 0.51718556999999998 0.17321669000000001 -0.17612775 0.51718556999999998 -0.1732167 -0.17612775 0.51718556999999998 -0.51965015999999997 -0.17612775 0.51718556999999998 0.38652175999999999 -0.16814947 0.61235803 0.17321669000000001 -0.16317010000000001 0.67175697999999995 -0.1732167 -0.16317010000000001 0.67175697999999995 -0.38652175999999999 -0.16814947 0.61235803 0.38652185 -0.29374105 0.27305119999999999 0.17321671999999999 -0.29872066000000003 0.21365231000000001 0.1732167 -0.28576341 0.36822373000000003 0.51965015999999997 -0.28576341 0.36822373000000003 -0.1"
 		+ "7321675 -0.29872066000000003 0.21365231000000001 -0.17321671999999999 -0.28576341 0.36822373000000003 -0.38652185 -0.29374105 0.27305119999999999 -0.51965015999999997 -0.28576341 0.36822373000000003 0.1732167 -0.27280545 0.52279514000000005 0.51965015999999997 -0.27280545 0.52279514000000005 -0.17321671999999999 -0.27280545 0.52279514000000005 -0.51965015999999997 -0.27280545 0.52279514000000005 0.17321671999999999 -0.25984812000000002 0.67736655000000001 0.38652185 -0.26482767000000002 0.61796761 -0.17321675 -0.25984812000000002 0.67736655000000001 -0.38652185 -0.26482767000000002 0.61796761 0.38652185 -0.24906310000000001 0.61705290999999995 0.17321671999999999 -0.24408352 0.67645186000000002 -0.17321673000000001 -0.24408352 0.67645186000000002 -0.38652185 -0.24906310000000001 0.61705290999999995 -0.51965015999999997 -0.25704089000000002 0.52188045000000005 -0.51965015999999997 -0.26999885000000001 0.367309 -0.38652185 -0.27797648000000003 0.27213648000000001 -0.17321673000000001 -0.28295608999999999 0.2127"
 		+ "3761999999999 0.17321671999999999 -0.28295608999999999 0.21273761999999999 0.38652185 -0.27797648000000003 0.27213648000000001 0.51965015999999997 -0.26999885000000001 0.367309 0.51965015999999997 -0.25704089000000002 0.52188045000000005 0.38652178999999998 -0.18283390999999999 0.61321007999999999 0.17321669000000001 -0.17785463000000001 0.67260903000000005 -0.1732167 -0.17785463000000001 0.67260903000000005 -0.38652178999999998 -0.18283390999999999 0.61321007999999999 -0.51965015999999997 -0.19081227000000001 0.51803761999999998 -0.51965015999999997 -0.20376953 0.36346620000000002 -0.38652178999999998 -0.21174775000000001 0.26829367999999998 -0.1732167 -0.21672715000000001 0.20889479999999999 0.17321669000000001 -0.21672715000000001 0.20889479999999999 0.38652178999999998 -0.21174775000000001 0.26829367999999998 0.51965015999999997 -0.20376953 0.36346620000000002 0.51965015999999997 -0.19081227000000001 0.51803761999999998"
 		)
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:body_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:body_GEO" 
 		"visibility" " 1"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
 		"visibility" " 1"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
 		"translateX" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
 		"translateY" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
 		"translateZ" " -av"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
 		"rotate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:controls_GRP|main_scene_2:Bricky:eye_main_CTRL" 
 		"scale" " -type \"double3\" 1 1 1"
-		3 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateX" 
-		"|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateX" 
+		3 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateX" 
+		"|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateX" 
 		""
-		3 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateY" 
-		"|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateY" 
+		3 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateY" 
+		"|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateY" 
 		""
-		3 "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateZ" 
-		"|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateZ" 
+		3 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateZ" 
+		"|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateZ" 
 		""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[146]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[147]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[148]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[149]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[150]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[151]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[152]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[153]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[154]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[155]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[156]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[157]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[158]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[159]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[160]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[161]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[162]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[163]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[164]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[165]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[166]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[167]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[168]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[169]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[170]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[171]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[172]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[173]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[174]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[175]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[176]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[177]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[178]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[179]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[180]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[181]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[182]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[183]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[184]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[185]" ""
-		5 0 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateX" 
-		"|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[186]" "main_scene_2RN.placeHolderList[187]" "main_scene_2:Bricky:eye_lf_GEO.rx"
-		
-		5 0 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateY" 
-		"|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[188]" "main_scene_2RN.placeHolderList[189]" "main_scene_2:Bricky:eye_lf_GEO.ry"
-		
-		5 0 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateZ" 
-		"|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[190]" "main_scene_2RN.placeHolderList[191]" "main_scene_2:Bricky:eye_lf_GEO.rz"
-		
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[192]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[193]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[194]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[195]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[196]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[197]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[198]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[199]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[200]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[201]" ""
-		"main_scene_2:LilBro2RN" 57
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"visibility" " -av 1"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"translateX" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"translateY" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"translateZ" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"rotate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"rotateX" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"rotateY" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"rotateZ" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"scale" " -type \"double3\" 1 1 1"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"scaleX" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"scaleY" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
-		"scaleZ" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO" 
-		"rotate" " -type \"double3\" 90 0 0"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO" 
-		"rotateX" " -av"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO" 
-		"rotate" " -type \"double3\" 90 0 0"
-		2 "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO" 
-		"rotateX" " -av"
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.translateX" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[356]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[357]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[358]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[359]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[360]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[361]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[362]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[363]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[364]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_rt_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[365]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[366]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[367]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[368]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[369]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[370]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[371]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[372]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[373]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[374]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyebrows_GRP|main_scene_2:Bricky:eyebrow_lf_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[375]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[376]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[377]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[378]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[379]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[380]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[381]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[382]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[383]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[384]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_lf_upper_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[385]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[386]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[387]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[388]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[389]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[390]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[391]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[392]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[393]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.scaleY" 
 		"main_scene_2RN.placeHolderList[394]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.translateY" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eyelids_GRP|main_scene_2:Bricky:eyelid_rt_upper_GEO.scaleZ" 
 		"main_scene_2RN.placeHolderList[395]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.translateZ" 
-		"main_scene_2RN.placeHolderList[396]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.visibility" 
-		"main_scene_2RN.placeHolderList[397]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.rotateX" 
-		"main_scene_2RN.placeHolderList[398]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.rotateY" 
-		"main_scene_2RN.placeHolderList[399]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.rotateZ" 
-		"main_scene_2RN.placeHolderList[400]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.scaleX" 
-		"main_scene_2RN.placeHolderList[401]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.scaleY" 
+		5 0 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateX" 
+		"|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[396]" "main_scene_2RN.placeHolderList[397]" "main_scene_2:Bricky:eye_lf_GEO.rx"
+		
+		5 0 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateY" 
+		"|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[398]" "main_scene_2RN.placeHolderList[399]" "main_scene_2:Bricky:eye_lf_GEO.ry"
+		
+		5 0 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO|main_scene_2:Bricky:eye_lf_GEO_aimConstraint1.constraintRotateZ" 
+		"|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:eyes_GRP|main_scene_2:Bricky:eye_lf_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[400]" "main_scene_2RN.placeHolderList[401]" "main_scene_2:Bricky:eye_lf_GEO.rz"
+		
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.scaleX" 
 		"main_scene_2RN.placeHolderList[402]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.scaleZ" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.scaleY" 
 		"main_scene_2RN.placeHolderList[403]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.translateX" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.scaleZ" 
 		"main_scene_2RN.placeHolderList[404]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.translateY" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.visibility" 
 		"main_scene_2RN.placeHolderList[405]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.translateZ" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.translateX" 
 		"main_scene_2RN.placeHolderList[406]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.visibility" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.translateY" 
 		"main_scene_2RN.placeHolderList[407]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.rotateX" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.translateZ" 
 		"main_scene_2RN.placeHolderList[408]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.rotateY" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.rotateX" 
 		"main_scene_2RN.placeHolderList[409]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.rotateZ" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.rotateY" 
 		"main_scene_2RN.placeHolderList[410]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.scaleX" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Bricky:bricky_main_CTRL|main_scene_2:Bricky:geometry_GRP|main_scene_2:Bricky:face_GRP|main_scene_2:Bricky:mouth_GEO.rotateZ" 
 		"main_scene_2RN.placeHolderList[411]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.scaleY" 
-		"main_scene_2RN.placeHolderList[412]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.scaleZ" 
-		"main_scene_2RN.placeHolderList[413]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[414]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[415]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[416]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[417]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[418]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[419]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[420]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[421]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[422]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[423]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[424]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[425]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[426]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[427]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[428]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[429]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[430]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[431]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[432]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[433]" ""
+		"main_scene_2:LilBro2RN" 58
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER" 
+		"visibility" " 1"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"visibility" " -av 1"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"translate" " -type \"double3\" 1.6868209169837831 1.6245290447047709 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"translateX" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"translateY" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"translateZ" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"rotate" " -type \"double3\" 0 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"rotateX" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"rotateY" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"rotateZ" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"scale" " -type \"double3\" 1 1 1"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"scaleX" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"scaleY" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK" 
+		"scaleZ" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO" 
+		"rotate" " -type \"double3\" -11.645362461970562 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO" 
+		"rotateX" " -av"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO" 
+		"rotate" " -type \"double3\" -4.5942036370882615 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO" 
+		"rotateX" " -av"
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.translateX" 
+		"main_scene_2RN.placeHolderList[607]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.translateY" 
+		"main_scene_2RN.placeHolderList[608]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.translateZ" 
+		"main_scene_2RN.placeHolderList[609]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.visibility" 
+		"main_scene_2RN.placeHolderList[610]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.rotateX" 
+		"main_scene_2RN.placeHolderList[611]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.rotateY" 
+		"main_scene_2RN.placeHolderList[612]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.rotateZ" 
+		"main_scene_2RN.placeHolderList[613]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.scaleX" 
+		"main_scene_2RN.placeHolderList[614]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.scaleY" 
+		"main_scene_2RN.placeHolderList[615]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_Body.scaleZ" 
+		"main_scene_2RN.placeHolderList[616]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.translateX" 
+		"main_scene_2RN.placeHolderList[617]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.translateY" 
+		"main_scene_2RN.placeHolderList[618]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.translateZ" 
+		"main_scene_2RN.placeHolderList[619]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.visibility" 
+		"main_scene_2RN.placeHolderList[620]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.rotateX" 
+		"main_scene_2RN.placeHolderList[621]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.rotateY" 
+		"main_scene_2RN.placeHolderList[622]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.rotateZ" 
+		"main_scene_2RN.placeHolderList[623]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.scaleX" 
+		"main_scene_2RN.placeHolderList[624]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.scaleY" 
+		"main_scene_2RN.placeHolderList[625]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_LOOK.scaleZ" 
+		"main_scene_2RN.placeHolderList[626]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[627]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[628]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[629]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[630]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[631]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[632]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[633]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[634]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[635]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_lf_upper_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[636]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[637]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[638]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[639]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[640]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[641]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[642]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[643]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[644]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[645]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro2:LilBro2_MASTER|main_scene_2:LilBro2:LilBro2_eyelids_GRP|main_scene_2:LilBro2:eyelid_rt_upper_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[646]" ""
 		"main_scene_2RN" 11
 		2 "main_scene_2:LilBro1_shader" "subsurface" " 0.40000000596046448"
 		2 "main_scene_2:LilBro1_shader" "metallic" " 0"
@@ -5276,538 +5277,550 @@ createNode reference -n "main_scene_2RN";
 		2 "main_scene_2:LilBro1_shader" "clearcoatGloss" " 1"
 		2 "main_scene_2:LilBro1_shader" "presence" " 1"
 		2 "main_scene_2:LilBro1_shader" "inputAOV" " 0"
-		"main_scene_2:AnglesRN" 89
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO" 
+		"main_scene_2:AnglesRN" 90
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL" 
+		"visibility" " 1"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO" 
+		"translate" " -type \"double3\" 0 -0.021713319289154449 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO" 
 		"translateY" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO" 
 		"translateZ" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO" 
+		"translate" " -type \"double3\" 0 -0.021713319289154449 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO" 
 		"translateY" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO" 
 		"translateZ" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO" 
-		"rotate" " -type \"double3\" -25 0 0"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO" 
+		"rotate" " -type \"double3\" -55.583912997311081 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO" 
 		"rotateX" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO" 
-		"rotate" " -type \"double3\" 64.244583959202501 0 0"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO" 
+		"rotate" " -type \"double3\" 10.9266477934652 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO" 
 		"rotateX" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO" 
-		"rotate" " -type \"double3\" 64.913967350194682 0 0"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO" 
+		"rotate" " -type \"double3\" 14.485373134458889 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO" 
 		"rotateX" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO" 
-		"rotate" " -type \"double3\" -25 0 0"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO" 
+		"rotate" " -type \"double3\" -47.009319927930235 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO" 
 		"rotateX" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL" 
-		"translate" " -type \"double3\" 0.065868745472184062 0.067973452999366551 1.0014439813223548"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL" 
+		"translate" " -type \"double3\" -1.3036116982855273 0.57682209093237835 1.0228101684301976"
 		
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL" 
 		"translateX" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL" 
 		"translateY" " -av"
-		2 "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL" 
 		"translateZ" " -av"
 		2 "main_scene_2:Angles:layer1" "visibility" " 0"
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[202]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[203]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[204]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[205]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[206]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[207]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[208]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[209]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[210]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[211]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[212]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[213]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[214]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[215]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[216]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[217]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[218]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[219]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[220]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[221]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[222]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[223]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[224]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[225]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[226]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[227]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[228]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[229]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[230]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[231]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[232]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[233]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[234]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[235]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[236]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[237]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[238]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[239]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[240]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[241]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[242]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[243]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[244]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[245]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[246]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[247]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[248]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[249]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[250]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[251]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[252]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[253]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[254]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[255]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[256]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[257]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[258]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[259]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[260]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[261]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.translateX" 
-		"main_scene_2RN.placeHolderList[262]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.translateY" 
-		"main_scene_2RN.placeHolderList[263]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.translateZ" 
-		"main_scene_2RN.placeHolderList[264]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.visibility" 
-		"main_scene_2RN.placeHolderList[265]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.rotateX" 
-		"main_scene_2RN.placeHolderList[266]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.rotateY" 
-		"main_scene_2RN.placeHolderList[267]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.rotateZ" 
-		"main_scene_2RN.placeHolderList[268]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.scaleX" 
-		"main_scene_2RN.placeHolderList[269]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.scaleY" 
-		"main_scene_2RN.placeHolderList[270]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.scaleZ" 
-		"main_scene_2RN.placeHolderList[271]" ""
-		"main_scene_2:RockyRN" 14
-		2 "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller" 
-		"translate" " -type \"double3\" -0.78360246205517359 -0.61809140134456175 0"
-		2 "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller" 
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[412]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[413]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[414]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[415]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[416]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[417]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[418]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[419]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[420]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_rt_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[421]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[422]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[423]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[424]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[425]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[426]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[427]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[428]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[429]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[430]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyebrows_GRP|main_scene_2:Angles:angles_eyebrow_lf_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[431]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[432]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[433]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[434]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[435]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[436]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[437]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[438]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[439]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[440]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_lower_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[441]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[442]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[443]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[444]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[445]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[446]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[447]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[448]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[449]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[450]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_upper_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[451]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[452]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[453]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[454]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[455]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[456]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[457]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[458]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[459]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[460]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_rt_upper_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[461]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[462]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[463]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[464]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[465]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[466]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[467]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[468]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[469]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[470]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_face_GRP|main_scene_2:Angles:angles_eyes_GRP|main_scene_2:Angles:angles_eyelids_GRP|main_scene_2:Angles:angles_eyelid_lf_lower_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[471]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.translateX" 
+		"main_scene_2RN.placeHolderList[472]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.translateY" 
+		"main_scene_2RN.placeHolderList[473]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.translateZ" 
+		"main_scene_2RN.placeHolderList[474]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.visibility" 
+		"main_scene_2RN.placeHolderList[475]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.rotateX" 
+		"main_scene_2RN.placeHolderList[476]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.rotateY" 
+		"main_scene_2RN.placeHolderList[477]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.rotateZ" 
+		"main_scene_2RN.placeHolderList[478]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.scaleX" 
+		"main_scene_2RN.placeHolderList[479]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.scaleY" 
+		"main_scene_2RN.placeHolderList[480]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Angles:angles_master_CTRL|main_scene_2:Angles:angles_GRP|main_scene_2:Angles:angles_controls_GRP|main_scene_2:Angles:angles_eye_main_CTRL.scaleZ" 
+		"main_scene_2RN.placeHolderList[481]" ""
+		"main_scene_2:RockyRN" 15
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER" 
+		"visibility" " 1"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller" 
+		"translate" " -type \"double3\" -0.10887941061147954 -0.82245824984829763 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller" 
 		"translateX" " -av"
-		2 "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller" 
 		"translateY" " -av"
-		2 "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller" 
 		"translateZ" " -av"
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.translateX" 
-		"main_scene_2RN.placeHolderList[322]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.translateY" 
-		"main_scene_2RN.placeHolderList[323]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.translateZ" 
-		"main_scene_2RN.placeHolderList[324]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.rotateX" 
-		"main_scene_2RN.placeHolderList[325]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.rotateY" 
-		"main_scene_2RN.placeHolderList[326]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.rotateZ" 
-		"main_scene_2RN.placeHolderList[327]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.visibility" 
-		"main_scene_2RN.placeHolderList[328]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.scaleX" 
-		"main_scene_2RN.placeHolderList[329]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.scaleY" 
-		"main_scene_2RN.placeHolderList[330]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.scaleZ" 
-		"main_scene_2RN.placeHolderList[331]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.translateX" 
+		"main_scene_2RN.placeHolderList[532]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.translateY" 
+		"main_scene_2RN.placeHolderList[533]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.translateZ" 
+		"main_scene_2RN.placeHolderList[534]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.rotateX" 
+		"main_scene_2RN.placeHolderList[535]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.rotateY" 
+		"main_scene_2RN.placeHolderList[536]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.rotateZ" 
+		"main_scene_2RN.placeHolderList[537]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.visibility" 
+		"main_scene_2RN.placeHolderList[538]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.scaleX" 
+		"main_scene_2RN.placeHolderList[539]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.scaleY" 
+		"main_scene_2RN.placeHolderList[540]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Rocky:Rocky_MASTER|main_scene_2:Rocky:Rocky_Body|main_scene_2:Rocky:Look_Controller.scaleZ" 
+		"main_scene_2RN.placeHolderList[541]" ""
 		"main_scene_2:LilBro1RN" 94
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER" 
+		"visibility" " 1"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body" 
 		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body" 
 		"translateX" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body" 
 		"translateY" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body" 
 		"translateZ" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
-		"instObjGroups.objectGroups" " -s 12"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
+		"instObjGroups.objectGroups" " -s 16"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
 		"instObjGroups.objectGroups[3].objectGrpColor" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
 		"instObjGroups.objectGroups[5].objectGrpColor" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
-		"compInstObjGroups.compObjectGroups" " -s 2"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
 		"uvPivot" " -type \"double2\" 0.50000005960464478 0.95000007748603821"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape" 
 		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
-		"instObjGroups.objectGroups" " -s 12"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
+		"instObjGroups.objectGroups" " -s 16"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
 		"instObjGroups.objectGroups[2].objectGrpColor" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
 		"instObjGroups.objectGroups[3].objectGrpColor" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
 		"instObjGroups.objectGroups[4].objectGrpColor" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
 		"instObjGroups.objectGroups[5].objectGrpColor" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
-		"compInstObjGroups.compObjectGroups" " -s 2"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
 		"uvPivot" " -type \"double2\" 0.67500010132789612 0.82500013709068298"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape" 
 		"uvSet[0].uvSetName" " -type \"string\" \"map1\""
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO" 
-		"rotate" " -type \"double3\" 90 0 0"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO" 
+		"rotate" " -type \"double3\" -0.95300149792907529 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO" 
 		"rotateX" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO" 
-		"rotate" " -type \"double3\" 90 0 0"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO" 
+		"rotate" " -type \"double3\" 4.4203129536390122 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO" 
 		"rotateX" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK" 
-		"translate" " -type \"double3\" 0 -1.6155145011658492 0"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK" 
+		"translate" " -type \"double3\" 5.0459979084876316 1.7373199649335025 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK" 
 		"translateX" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK" 
 		"translateY" " -av"
-		2 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK" 
 		"translateZ" " -av"
-		3 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups" 
+		3 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups" 
 		"main_scene_2:PxrDisney5SG.dagSetMembers" "-na"
-		3 "main_scene_2:LilBro1:groupParts19.outputGeometry" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.inMesh" 
+		3 "main_scene_2:LilBro1:groupParts21.outputGeometry" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.inMesh" 
 		""
-		3 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.compInstObjGroups.compObjectGroups[0]" 
-		"main_scene_2:LilBro1:PxrDisney3SG.dagSetMembers" "-na"
-		3 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.compInstObjGroups.compObjectGroups[0]" 
-		"main_scene_2:LilBro1:PxrDisney3SG.dagSetMembers" "-na"
-		3 "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups" 
+		3 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups" 
 		"main_scene_2:PxrDisney5SG.dagSetMembers" "-na"
-		3 "main_scene_2:LilBro1:groupParts21.outputGeometry" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.inMesh" 
+		3 "main_scene_2:LilBro1:groupParts19.outputGeometry" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.inMesh" 
 		""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.translateX" 
-		"main_scene_2RN.placeHolderList[332]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.translateY" 
-		"main_scene_2RN.placeHolderList[333]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.translateZ" 
-		"main_scene_2RN.placeHolderList[334]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.visibility" 
-		"main_scene_2RN.placeHolderList[335]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.rotateX" 
-		"main_scene_2RN.placeHolderList[336]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.rotateY" 
-		"main_scene_2RN.placeHolderList[337]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.rotateZ" 
-		"main_scene_2RN.placeHolderList[338]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.scaleX" 
-		"main_scene_2RN.placeHolderList[339]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.scaleY" 
-		"main_scene_2RN.placeHolderList[340]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.scaleZ" 
-		"main_scene_2RN.placeHolderList[341]" ""
-		5 3 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L.instObjGroups" 
-		"main_scene_2RN.placeHolderList[342]" ""
-		5 3 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[12]" 
-		"main_scene_2RN.placeHolderList[343]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[12].objectGroupId" 
-		"main_scene_2RN.placeHolderList[344]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[12].objectGrpColor" 
-		"main_scene_2RN.placeHolderList[345]" ""
-		5 3 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[13]" 
-		"main_scene_2RN.placeHolderList[346]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[13].objectGroupId" 
-		"main_scene_2RN.placeHolderList[347]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[13].objectGrpColor" 
-		"main_scene_2RN.placeHolderList[348]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.inMesh" 
-		"main_scene_2RN.placeHolderList[349]" ""
-		5 3 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.compInstObjGroups.compObjectGroups[1]" 
-		"main_scene_2RN.placeHolderList[350]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.compInstObjGroups.compObjectGroups[1].compObjectGroupId" 
-		"main_scene_2RN.placeHolderList[351]" ""
-		5 3 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[10]" 
-		"main_scene_2RN.placeHolderList[352]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[10].objectGroupId" 
-		"main_scene_2RN.placeHolderList[353]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[10].objectGrpColor" 
-		"main_scene_2RN.placeHolderList[354]" ""
-		5 3 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[11]" 
-		"main_scene_2RN.placeHolderList[355]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[11].objectGroupId" 
-		"main_scene_2RN.placeHolderList[356]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[11].objectGrpColor" 
-		"main_scene_2RN.placeHolderList[357]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.inMesh" 
-		"main_scene_2RN.placeHolderList[358]" ""
-		5 3 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.compInstObjGroups.compObjectGroups[1]" 
-		"main_scene_2RN.placeHolderList[359]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.compInstObjGroups.compObjectGroups[1].compObjectGroupId" 
-		"main_scene_2RN.placeHolderList[360]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[361]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[362]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[363]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[364]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[365]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[366]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[367]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[368]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[369]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[370]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[371]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[372]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[373]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[374]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[375]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[376]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[377]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[378]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[379]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[380]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.translateX" 
-		"main_scene_2RN.placeHolderList[381]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.translateY" 
-		"main_scene_2RN.placeHolderList[382]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.translateZ" 
-		"main_scene_2RN.placeHolderList[383]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.visibility" 
-		"main_scene_2RN.placeHolderList[384]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.rotateX" 
-		"main_scene_2RN.placeHolderList[385]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.rotateY" 
-		"main_scene_2RN.placeHolderList[386]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.rotateZ" 
-		"main_scene_2RN.placeHolderList[387]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.scaleX" 
-		"main_scene_2RN.placeHolderList[388]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.scaleY" 
-		"main_scene_2RN.placeHolderList[389]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.scaleZ" 
-		"main_scene_2RN.placeHolderList[390]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.blendAim1" 
-		"main_scene_2RN.placeHolderList[391]" ""
+		3 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.compInstObjGroups.compObjectGroups[0]" 
+		"main_scene_2:LilBro1:PxrDisney3SG.dagSetMembers" "-na"
+		3 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.compInstObjGroups.compObjectGroups[0]" 
+		"main_scene_2:LilBro1:PxrDisney3SG.dagSetMembers" "-na"
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.translateX" 
+		"main_scene_2RN.placeHolderList[542]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.translateY" 
+		"main_scene_2RN.placeHolderList[543]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.translateZ" 
+		"main_scene_2RN.placeHolderList[544]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.visibility" 
+		"main_scene_2RN.placeHolderList[545]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.rotateX" 
+		"main_scene_2RN.placeHolderList[546]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.rotateY" 
+		"main_scene_2RN.placeHolderList[547]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.rotateZ" 
+		"main_scene_2RN.placeHolderList[548]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.scaleX" 
+		"main_scene_2RN.placeHolderList[549]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.scaleY" 
+		"main_scene_2RN.placeHolderList[550]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body.scaleZ" 
+		"main_scene_2RN.placeHolderList[551]" ""
+		5 3 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[12]" 
+		"main_scene_2RN.placeHolderList[552]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[12].objectGroupId" 
+		"main_scene_2RN.placeHolderList[553]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[12].objectGrpColor" 
+		"main_scene_2RN.placeHolderList[554]" ""
+		5 3 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[13]" 
+		"main_scene_2RN.placeHolderList[555]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[13].objectGroupId" 
+		"main_scene_2RN.placeHolderList[556]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.instObjGroups.objectGroups[13].objectGrpColor" 
+		"main_scene_2RN.placeHolderList[557]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.inMesh" 
+		"main_scene_2RN.placeHolderList[558]" ""
+		5 0 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.compInstObjGroups.compObjectGroups[0]" 
+		"main_scene_2:PxrDisney5SG.dagSetMembers" "main_scene_2RN.placeHolderList[559]" "main_scene_2RN.placeHolderList[560]" 
+		"main_scene_2:LilBro1:PxrDisney3SG.dsm"
+		5 3 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.compInstObjGroups.compObjectGroups[1]" 
+		"main_scene_2RN.placeHolderList[561]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.compInstObjGroups.compObjectGroups[1].compObjectGroupId" 
+		"main_scene_2RN.placeHolderList[562]" ""
+		5 3 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[10]" 
+		"main_scene_2RN.placeHolderList[563]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[10].objectGroupId" 
+		"main_scene_2RN.placeHolderList[564]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[10].objectGrpColor" 
+		"main_scene_2RN.placeHolderList[565]" ""
+		5 3 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[11]" 
+		"main_scene_2RN.placeHolderList[566]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[11].objectGroupId" 
+		"main_scene_2RN.placeHolderList[567]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.instObjGroups.objectGroups[11].objectGrpColor" 
+		"main_scene_2RN.placeHolderList[568]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.inMesh" 
+		"main_scene_2RN.placeHolderList[569]" ""
+		5 0 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.compInstObjGroups.compObjectGroups[0]" 
+		"main_scene_2:PxrDisney5SG.dagSetMembers" "main_scene_2RN.placeHolderList[570]" "main_scene_2RN.placeHolderList[571]" 
+		"main_scene_2:LilBro1:PxrDisney3SG.dsm"
+		5 3 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.compInstObjGroups.compObjectGroups[1]" 
+		"main_scene_2RN.placeHolderList[572]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.compInstObjGroups.compObjectGroups[1].compObjectGroupId" 
+		"main_scene_2RN.placeHolderList[573]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[574]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[575]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[576]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[577]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[578]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[579]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[580]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[581]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[582]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_lf_upper_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[583]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[584]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[585]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[586]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[587]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[588]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[589]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[590]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[591]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[592]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_eyelids_GRP|main_scene_2:LilBro1:eyelid_rt_upper_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[593]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.translateX" 
+		"main_scene_2RN.placeHolderList[594]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.translateY" 
+		"main_scene_2RN.placeHolderList[595]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.translateZ" 
+		"main_scene_2RN.placeHolderList[596]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.visibility" 
+		"main_scene_2RN.placeHolderList[597]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.rotateX" 
+		"main_scene_2RN.placeHolderList[598]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.rotateY" 
+		"main_scene_2RN.placeHolderList[599]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.rotateZ" 
+		"main_scene_2RN.placeHolderList[600]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.scaleX" 
+		"main_scene_2RN.placeHolderList[601]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.scaleY" 
+		"main_scene_2RN.placeHolderList[602]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.scaleZ" 
+		"main_scene_2RN.placeHolderList[603]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_LOOK.blendAim1" 
+		"main_scene_2RN.placeHolderList[604]" ""
 		5 3 "main_scene_2RN" "main_scene_2:LilBro1:groupParts19.outputGeometry" 
-		"main_scene_2RN.placeHolderList[392]" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.i"
+		"main_scene_2RN.placeHolderList[605]" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_R|main_scene_2:LilBro1:LilBro1_Eye_RShape.i"
 		
 		5 3 "main_scene_2RN" "main_scene_2:LilBro1:groupParts21.outputGeometry" 
-		"main_scene_2RN.placeHolderList[393]" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.i"
+		"main_scene_2RN.placeHolderList[606]" "|main_scene_2:LilBro1:LilBro1_MASTER|main_scene_2:LilBro1:LilBro1_Body|main_scene_2:LilBro1:LilBro1_Eye_L|main_scene_2:LilBro1:LilBro1_Eye_LShape.i"
 		
-		"main_scene_2:StonyRN" 62
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO" 
+		"main_scene_2:StonyRN" 63
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL" 
+		"visibility" " 1"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO" 
+		"translate" " -type \"double3\" 0 -0.019637328421494096 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO" 
 		"translateY" " -av"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO" 
+		"translate" " -type \"double3\" 0 -0.019637328421494096 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO" 
 		"translateY" " -av"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2" 
-		"rotate" " -type \"double3\" 80.144114377743634 0 0"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2" 
+		"rotate" " -type \"double3\" 21.280208240215284 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2" 
 		"rotateX" " -av"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO" 
-		"rotate" " -type \"double3\" 87.128689500793755 0 0"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO" 
+		"rotate" " -type \"double3\" 20.589740660426568 0 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO" 
 		"rotateX" " -av"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL" 
-		"translate" " -type \"double3\" 0 0 0"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL" 
+		"translate" " -type \"double3\" 0.30366860094142728 -0.39918313947241968 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL" 
 		"translateX" " -av"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL" 
 		"translateY" " -av"
-		2 "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL" 
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL" 
 		"translateZ" " -av"
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[272]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[273]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[274]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[275]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[276]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[277]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[278]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[279]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[280]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[281]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[282]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[283]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[284]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[285]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[286]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[287]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[288]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[289]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[290]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[291]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.rotateX" 
-		"main_scene_2RN.placeHolderList[292]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.rotateY" 
-		"main_scene_2RN.placeHolderList[293]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.rotateZ" 
-		"main_scene_2RN.placeHolderList[294]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.visibility" 
-		"main_scene_2RN.placeHolderList[295]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.translateX" 
-		"main_scene_2RN.placeHolderList[296]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.translateY" 
-		"main_scene_2RN.placeHolderList[297]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.translateZ" 
-		"main_scene_2RN.placeHolderList[298]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.scaleX" 
-		"main_scene_2RN.placeHolderList[299]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.scaleY" 
-		"main_scene_2RN.placeHolderList[300]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.scaleZ" 
-		"main_scene_2RN.placeHolderList[301]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.rotateX" 
-		"main_scene_2RN.placeHolderList[302]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.rotateY" 
-		"main_scene_2RN.placeHolderList[303]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.rotateZ" 
-		"main_scene_2RN.placeHolderList[304]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.visibility" 
-		"main_scene_2RN.placeHolderList[305]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.translateX" 
-		"main_scene_2RN.placeHolderList[306]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.translateY" 
-		"main_scene_2RN.placeHolderList[307]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.translateZ" 
-		"main_scene_2RN.placeHolderList[308]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.scaleX" 
-		"main_scene_2RN.placeHolderList[309]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.scaleY" 
-		"main_scene_2RN.placeHolderList[310]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.scaleZ" 
-		"main_scene_2RN.placeHolderList[311]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.translateX" 
-		"main_scene_2RN.placeHolderList[312]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.translateY" 
-		"main_scene_2RN.placeHolderList[313]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.translateZ" 
-		"main_scene_2RN.placeHolderList[314]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.visibility" 
-		"main_scene_2RN.placeHolderList[315]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.rotateX" 
-		"main_scene_2RN.placeHolderList[316]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.rotateY" 
-		"main_scene_2RN.placeHolderList[317]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.rotateZ" 
-		"main_scene_2RN.placeHolderList[318]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.scaleX" 
-		"main_scene_2RN.placeHolderList[319]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.scaleY" 
-		"main_scene_2RN.placeHolderList[320]" ""
-		5 4 "main_scene_2RN" "|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.scaleZ" 
-		"main_scene_2RN.placeHolderList[321]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[482]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[483]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[484]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[485]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[486]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[487]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[488]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[489]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[490]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_rt_eyebrow_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[491]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[492]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[493]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[494]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[495]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[496]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[497]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[498]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[499]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[500]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyebrows_GRP|main_scene_2:Stony:stony_lf_eyebrow_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[501]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.rotateX" 
+		"main_scene_2RN.placeHolderList[502]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.rotateY" 
+		"main_scene_2RN.placeHolderList[503]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.rotateZ" 
+		"main_scene_2RN.placeHolderList[504]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.visibility" 
+		"main_scene_2RN.placeHolderList[505]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.translateX" 
+		"main_scene_2RN.placeHolderList[506]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.translateY" 
+		"main_scene_2RN.placeHolderList[507]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.translateZ" 
+		"main_scene_2RN.placeHolderList[508]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.scaleX" 
+		"main_scene_2RN.placeHolderList[509]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.scaleY" 
+		"main_scene_2RN.placeHolderList[510]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_lf_upper_GEO2.scaleZ" 
+		"main_scene_2RN.placeHolderList[511]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.rotateX" 
+		"main_scene_2RN.placeHolderList[512]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.rotateY" 
+		"main_scene_2RN.placeHolderList[513]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.rotateZ" 
+		"main_scene_2RN.placeHolderList[514]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.visibility" 
+		"main_scene_2RN.placeHolderList[515]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.translateX" 
+		"main_scene_2RN.placeHolderList[516]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.translateY" 
+		"main_scene_2RN.placeHolderList[517]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.translateZ" 
+		"main_scene_2RN.placeHolderList[518]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.scaleX" 
+		"main_scene_2RN.placeHolderList[519]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.scaleY" 
+		"main_scene_2RN.placeHolderList[520]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_face_GRP|main_scene_2:Stony:stony_eyelids_GRP|main_scene_2:Stony:stony_eyelid_rt_upper_GEO.scaleZ" 
+		"main_scene_2RN.placeHolderList[521]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.translateX" 
+		"main_scene_2RN.placeHolderList[522]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.translateY" 
+		"main_scene_2RN.placeHolderList[523]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.translateZ" 
+		"main_scene_2RN.placeHolderList[524]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.visibility" 
+		"main_scene_2RN.placeHolderList[525]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.rotateX" 
+		"main_scene_2RN.placeHolderList[526]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.rotateY" 
+		"main_scene_2RN.placeHolderList[527]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.rotateZ" 
+		"main_scene_2RN.placeHolderList[528]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.scaleX" 
+		"main_scene_2RN.placeHolderList[529]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.scaleY" 
+		"main_scene_2RN.placeHolderList[530]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:CHARACTERS|main_scene_2:Stony:stony_master_CTRL|main_scene_2:Stony:stony_GRP|main_scene_2:Stony:stony_controls_GRP|main_scene_2:Stony:stony_eye_main_CTRL.scaleZ" 
+		"main_scene_2RN.placeHolderList[531]" ""
 		"main_scene_2:main_sceneRN" 33
-		2 "|main_scene_2:main_scene:rocks" "visibility" " 0"
-		2 "|main_scene_2:main_scene:rocks|main_scene_2:main_scene:rock01" "translate" 
-		" -type \"double3\" 22.40178638152323 3.2437016566919272 18.255436255422772"
-		2 "|main_scene_2:main_scene:rocks|main_scene_2:main_scene:rock02" "translate" 
-		" -type \"double3\" 24.094957044026653 2.9084155970122811 18.609222209700288"
-		2 "|main_scene_2:main_scene:rocks|main_scene_2:main_scene:rock03" "translate" 
-		" -type \"double3\" 23.319687193443841 3.8493635898155869 20.368432737968192"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:rocks" 
+		"visibility" " 0"
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:rocks|main_scene_2:main_scene:rock01" 
+		"translate" " -type \"double3\" 22.40178638152323 3.2437016566919272 18.255436255422772"
+		
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:rocks|main_scene_2:main_scene:rock02" 
+		"translate" " -type \"double3\" 24.094957044026653 2.9084155970122811 18.609222209700288"
+		
+		2 "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:rocks|main_scene_2:main_scene:rock03" 
+		"translate" " -type \"double3\" 23.319687193443841 3.8493635898155869 20.368432737968192"
+		
 		2 "main_scene_2:main_scene:granite:PxrLMDiffuseGranite" "translucence" " 0"
 		
 		2 "main_scene_2:main_scene:granite:PxrLMDiffuseGranite" "presence" " 1"
@@ -5826,32 +5839,32 @@ createNode reference -n "main_scene_2RN";
 		2 "main_scene_2:main_scene:groundShader" "presence" " 1"
 		2 "main_scene_2:main_scene:groundShader" "inputAOV" " 0"
 		2 "main_scene_2:main_scene:Rest_of_wall" "visibility" " 1"
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.translateX" "main_scene_2RN.placeHolderList[133]" 
-		""
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.translateY" "main_scene_2RN.placeHolderList[134]" 
-		""
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.translateZ" "main_scene_2RN.placeHolderList[135]" 
-		""
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.visibility" "main_scene_2RN.placeHolderList[136]" 
-		""
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.rotateX" "main_scene_2RN.placeHolderList[137]" 
-		""
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.rotateY" "main_scene_2RN.placeHolderList[138]" 
-		""
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.rotateZ" "main_scene_2RN.placeHolderList[139]" 
-		""
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.scaleX" "main_scene_2RN.placeHolderList[140]" 
-		""
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.scaleY" "main_scene_2RN.placeHolderList[141]" 
-		""
-		5 4 "main_scene_2RN" "|main_scene_2:main_scene:pPlane1.scaleZ" "main_scene_2RN.placeHolderList[142]" 
-		""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.translateX" 
+		"main_scene_2RN.placeHolderList[343]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.translateY" 
+		"main_scene_2RN.placeHolderList[344]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.translateZ" 
+		"main_scene_2RN.placeHolderList[345]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.visibility" 
+		"main_scene_2RN.placeHolderList[346]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.rotateX" 
+		"main_scene_2RN.placeHolderList[347]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.rotateY" 
+		"main_scene_2RN.placeHolderList[348]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.rotateZ" 
+		"main_scene_2RN.placeHolderList[349]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.scaleX" 
+		"main_scene_2RN.placeHolderList[350]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.scaleY" 
+		"main_scene_2RN.placeHolderList[351]" ""
+		5 4 "main_scene_2RN" "|main_scene_2:MAINSCENE2|main_scene_2:SCENE_DECORATIONS|main_scene_2:main_scene:pPlane1.scaleZ" 
+		"main_scene_2RN.placeHolderList[352]" ""
 		5 4 "main_scene_2RN" "main_scene_2:main_scene:granite:PxrLMDiffuseGraniteSG.dagSetMembers" 
-		"main_scene_2RN.placeHolderList[143]" ""
+		"main_scene_2RN.placeHolderList[353]" ""
 		5 4 "main_scene_2RN" "main_scene_2:main_scene:granite:PxrLMDiffuseGraniteSG.dagSetMembers" 
-		"main_scene_2RN.placeHolderList[144]" ""
+		"main_scene_2RN.placeHolderList[354]" ""
 		5 4 "main_scene_2RN" "main_scene_2:main_scene:granite:PxrLMDiffuseGraniteSG.dagSetMembers" 
-		"main_scene_2RN.placeHolderList[145]" "";
+		"main_scene_2RN.placeHolderList[355]" "";
 	setAttr ".ptag" -type "string" "";
 lockNode -l 1 ;
 createNode RenderMan -s -n "renderManGlobals";
@@ -7875,9 +7888,15 @@ createNode animCurveTU -n "pPlane1_scaleZ";
 	rename -uid "9F277411-4EF2-7D32-E6A2-859FFA39C7D1";
 	setAttr ".tan" 18;
 	setAttr ".ktv[0]"  42 114.837844848633;
+createNode reference -n "_UNKNOWN_REF_NODE_";
+	rename -uid "0F8A9201-4AB3-1A56-1F34-B498A6383916";
+	setAttr ".ed" -type "dataReferenceEdits" 
+		"_UNKNOWN_REF_NODE_"
+		"_UNKNOWN_REF_NODE_" 1
+		2 ":LookdevModelEditorPanelModelPanelViewSelectedSet" "ihi" " 0";
 select -ne :time1;
-	setAttr ".o" 1;
-	setAttr ".unw" 1;
+	setAttr ".o" 250;
+	setAttr ".unw" 250;
 select -ne :hardwareRenderingGlobals;
 	setAttr ".otfna" -type "stringArray" 22 "NURBS Curves" "NURBS Surfaces" "Polygons" "Subdiv Surface" "Particles" "Particle Instance" "Fluids" "Strokes" "Image Planes" "UI" "Lights" "Cameras" "Locators" "Joints" "IK Handles" "Deformers" "Motion Trails" "Components" "Hair Systems" "Follicles" "Misc. UI" "Ornaments"  ;
 	setAttr ".otfva" -type "Int32Array" 22 0 1 1 1 1 1
@@ -7913,307 +7932,305 @@ select -ne :defaultLightSet;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
-select -ne :LookdevModelEditorPanelModelPanelViewSelectedSet;
-	setAttr ".ihi" 0;
-connectAttr "eyebrow_rt_GEO_visibility.o" "main_scene_2RN.phl[146]";
-connectAttr "eyebrow_rt_GEO_translateX.o" "main_scene_2RN.phl[147]";
-connectAttr "eyebrow_rt_GEO_translateY.o" "main_scene_2RN.phl[148]";
-connectAttr "eyebrow_rt_GEO_translateZ.o" "main_scene_2RN.phl[149]";
-connectAttr "eyebrow_rt_GEO_rotateX.o" "main_scene_2RN.phl[150]";
-connectAttr "eyebrow_rt_GEO_rotateY.o" "main_scene_2RN.phl[151]";
-connectAttr "eyebrow_rt_GEO_rotateZ.o" "main_scene_2RN.phl[152]";
-connectAttr "eyebrow_rt_GEO_scaleX.o" "main_scene_2RN.phl[153]";
-connectAttr "eyebrow_rt_GEO_scaleY.o" "main_scene_2RN.phl[154]";
-connectAttr "eyebrow_rt_GEO_scaleZ.o" "main_scene_2RN.phl[155]";
-connectAttr "eyebrow_lf_GEO_visibility.o" "main_scene_2RN.phl[156]";
-connectAttr "eyebrow_lf_GEO_translateX.o" "main_scene_2RN.phl[157]";
-connectAttr "eyebrow_lf_GEO_translateY.o" "main_scene_2RN.phl[158]";
-connectAttr "eyebrow_lf_GEO_translateZ.o" "main_scene_2RN.phl[159]";
-connectAttr "eyebrow_lf_GEO_rotateX.o" "main_scene_2RN.phl[160]";
-connectAttr "eyebrow_lf_GEO_rotateY.o" "main_scene_2RN.phl[161]";
-connectAttr "eyebrow_lf_GEO_rotateZ.o" "main_scene_2RN.phl[162]";
-connectAttr "eyebrow_lf_GEO_scaleX.o" "main_scene_2RN.phl[163]";
-connectAttr "eyebrow_lf_GEO_scaleY.o" "main_scene_2RN.phl[164]";
-connectAttr "eyebrow_lf_GEO_scaleZ.o" "main_scene_2RN.phl[165]";
-connectAttr "eyelid_lf_upper_GEO_rotateX2.o" "main_scene_2RN.phl[166]";
-connectAttr "eyelid_lf_upper_GEO_rotateY2.o" "main_scene_2RN.phl[167]";
-connectAttr "eyelid_lf_upper_GEO_rotateZ2.o" "main_scene_2RN.phl[168]";
-connectAttr "eyelid_lf_upper_GEO_visibility2.o" "main_scene_2RN.phl[169]";
-connectAttr "eyelid_lf_upper_GEO_translateX2.o" "main_scene_2RN.phl[170]";
-connectAttr "eyelid_lf_upper_GEO_translateY2.o" "main_scene_2RN.phl[171]";
-connectAttr "eyelid_lf_upper_GEO_translateZ2.o" "main_scene_2RN.phl[172]";
-connectAttr "eyelid_lf_upper_GEO_scaleX2.o" "main_scene_2RN.phl[173]";
-connectAttr "eyelid_lf_upper_GEO_scaleY2.o" "main_scene_2RN.phl[174]";
-connectAttr "eyelid_lf_upper_GEO_scaleZ2.o" "main_scene_2RN.phl[175]";
-connectAttr "eyelid_rt_upper_GEO_rotateX2.o" "main_scene_2RN.phl[176]";
-connectAttr "eyelid_rt_upper_GEO_rotateY2.o" "main_scene_2RN.phl[177]";
-connectAttr "eyelid_rt_upper_GEO_rotateZ2.o" "main_scene_2RN.phl[178]";
-connectAttr "eyelid_rt_upper_GEO_visibility2.o" "main_scene_2RN.phl[179]";
-connectAttr "eyelid_rt_upper_GEO_translateX2.o" "main_scene_2RN.phl[180]";
-connectAttr "eyelid_rt_upper_GEO_translateY2.o" "main_scene_2RN.phl[181]";
-connectAttr "eyelid_rt_upper_GEO_translateZ2.o" "main_scene_2RN.phl[182]";
-connectAttr "eyelid_rt_upper_GEO_scaleX2.o" "main_scene_2RN.phl[183]";
-connectAttr "eyelid_rt_upper_GEO_scaleY2.o" "main_scene_2RN.phl[184]";
-connectAttr "eyelid_rt_upper_GEO_scaleZ2.o" "main_scene_2RN.phl[185]";
-connectAttr "main_scene_2RN.phl[186]" "main_scene_2RN.phl[187]";
-connectAttr "main_scene_2RN.phl[188]" "main_scene_2RN.phl[189]";
-connectAttr "main_scene_2RN.phl[190]" "main_scene_2RN.phl[191]";
-connectAttr "mouth_GEO_visibility.o" "main_scene_2RN.phl[192]";
-connectAttr "mouth_GEO_translateX.o" "main_scene_2RN.phl[193]";
-connectAttr "mouth_GEO_translateY.o" "main_scene_2RN.phl[194]";
-connectAttr "mouth_GEO_translateZ.o" "main_scene_2RN.phl[195]";
-connectAttr "mouth_GEO_rotateX.o" "main_scene_2RN.phl[196]";
-connectAttr "mouth_GEO_rotateY.o" "main_scene_2RN.phl[197]";
-connectAttr "mouth_GEO_rotateZ.o" "main_scene_2RN.phl[198]";
-connectAttr "mouth_GEO_scaleX.o" "main_scene_2RN.phl[199]";
-connectAttr "mouth_GEO_scaleY.o" "main_scene_2RN.phl[200]";
-connectAttr "mouth_GEO_scaleZ.o" "main_scene_2RN.phl[201]";
-connectAttr "LilBro2_Body_translateX.o" "main_scene_2RN.phl[394]";
-connectAttr "LilBro2_Body_translateY.o" "main_scene_2RN.phl[395]";
-connectAttr "LilBro2_Body_translateZ.o" "main_scene_2RN.phl[396]";
-connectAttr "LilBro2_Body_visibility.o" "main_scene_2RN.phl[397]";
-connectAttr "LilBro2_Body_rotateX.o" "main_scene_2RN.phl[398]";
-connectAttr "LilBro2_Body_rotateY.o" "main_scene_2RN.phl[399]";
-connectAttr "LilBro2_Body_rotateZ.o" "main_scene_2RN.phl[400]";
-connectAttr "LilBro2_Body_scaleX.o" "main_scene_2RN.phl[401]";
-connectAttr "LilBro2_Body_scaleY.o" "main_scene_2RN.phl[402]";
-connectAttr "LilBro2_Body_scaleZ.o" "main_scene_2RN.phl[403]";
-connectAttr "LilBro2_LOOK_translateX.o" "main_scene_2RN.phl[404]";
-connectAttr "LilBro2_LOOK_translateY.o" "main_scene_2RN.phl[405]";
-connectAttr "LilBro2_LOOK_translateZ.o" "main_scene_2RN.phl[406]";
-connectAttr "LilBro2_LOOK_visibility.o" "main_scene_2RN.phl[407]";
-connectAttr "LilBro2_LOOK_rotateX.o" "main_scene_2RN.phl[408]";
-connectAttr "LilBro2_LOOK_rotateY.o" "main_scene_2RN.phl[409]";
-connectAttr "LilBro2_LOOK_rotateZ.o" "main_scene_2RN.phl[410]";
-connectAttr "LilBro2_LOOK_scaleX.o" "main_scene_2RN.phl[411]";
-connectAttr "LilBro2_LOOK_scaleY.o" "main_scene_2RN.phl[412]";
-connectAttr "LilBro2_LOOK_scaleZ.o" "main_scene_2RN.phl[413]";
-connectAttr "eyelid_lf_upper_GEO_rotateX1.o" "main_scene_2RN.phl[414]";
-connectAttr "eyelid_lf_upper_GEO_rotateY1.o" "main_scene_2RN.phl[415]";
-connectAttr "eyelid_lf_upper_GEO_rotateZ1.o" "main_scene_2RN.phl[416]";
-connectAttr "eyelid_lf_upper_GEO_visibility1.o" "main_scene_2RN.phl[417]";
-connectAttr "eyelid_lf_upper_GEO_translateX1.o" "main_scene_2RN.phl[418]";
-connectAttr "eyelid_lf_upper_GEO_translateY1.o" "main_scene_2RN.phl[419]";
-connectAttr "eyelid_lf_upper_GEO_translateZ1.o" "main_scene_2RN.phl[420]";
-connectAttr "eyelid_lf_upper_GEO_scaleX1.o" "main_scene_2RN.phl[421]";
-connectAttr "eyelid_lf_upper_GEO_scaleY1.o" "main_scene_2RN.phl[422]";
-connectAttr "eyelid_lf_upper_GEO_scaleZ1.o" "main_scene_2RN.phl[423]";
-connectAttr "eyelid_rt_upper_GEO_rotateX1.o" "main_scene_2RN.phl[424]";
-connectAttr "eyelid_rt_upper_GEO_rotateY1.o" "main_scene_2RN.phl[425]";
-connectAttr "eyelid_rt_upper_GEO_rotateZ1.o" "main_scene_2RN.phl[426]";
-connectAttr "eyelid_rt_upper_GEO_visibility1.o" "main_scene_2RN.phl[427]";
-connectAttr "eyelid_rt_upper_GEO_translateX1.o" "main_scene_2RN.phl[428]";
-connectAttr "eyelid_rt_upper_GEO_translateY1.o" "main_scene_2RN.phl[429]";
-connectAttr "eyelid_rt_upper_GEO_translateZ1.o" "main_scene_2RN.phl[430]";
-connectAttr "eyelid_rt_upper_GEO_scaleX1.o" "main_scene_2RN.phl[431]";
-connectAttr "eyelid_rt_upper_GEO_scaleY1.o" "main_scene_2RN.phl[432]";
-connectAttr "eyelid_rt_upper_GEO_scaleZ1.o" "main_scene_2RN.phl[433]";
-connectAttr "angles_eyebrow_rt_GEO_visibility.o" "main_scene_2RN.phl[202]";
-connectAttr "angles_eyebrow_rt_GEO_translateX.o" "main_scene_2RN.phl[203]";
-connectAttr "angles_eyebrow_rt_GEO_translateY.o" "main_scene_2RN.phl[204]";
-connectAttr "angles_eyebrow_rt_GEO_translateZ.o" "main_scene_2RN.phl[205]";
-connectAttr "angles_eyebrow_rt_GEO_rotateX.o" "main_scene_2RN.phl[206]";
-connectAttr "angles_eyebrow_rt_GEO_rotateY.o" "main_scene_2RN.phl[207]";
-connectAttr "angles_eyebrow_rt_GEO_rotateZ.o" "main_scene_2RN.phl[208]";
-connectAttr "angles_eyebrow_rt_GEO_scaleX.o" "main_scene_2RN.phl[209]";
-connectAttr "angles_eyebrow_rt_GEO_scaleY.o" "main_scene_2RN.phl[210]";
-connectAttr "angles_eyebrow_rt_GEO_scaleZ.o" "main_scene_2RN.phl[211]";
-connectAttr "angles_eyebrow_lf_GEO_visibility.o" "main_scene_2RN.phl[212]";
-connectAttr "angles_eyebrow_lf_GEO_translateX.o" "main_scene_2RN.phl[213]";
-connectAttr "angles_eyebrow_lf_GEO_translateY.o" "main_scene_2RN.phl[214]";
-connectAttr "angles_eyebrow_lf_GEO_translateZ.o" "main_scene_2RN.phl[215]";
-connectAttr "angles_eyebrow_lf_GEO_rotateX.o" "main_scene_2RN.phl[216]";
-connectAttr "angles_eyebrow_lf_GEO_rotateY.o" "main_scene_2RN.phl[217]";
-connectAttr "angles_eyebrow_lf_GEO_rotateZ.o" "main_scene_2RN.phl[218]";
-connectAttr "angles_eyebrow_lf_GEO_scaleX.o" "main_scene_2RN.phl[219]";
-connectAttr "angles_eyebrow_lf_GEO_scaleY.o" "main_scene_2RN.phl[220]";
-connectAttr "angles_eyebrow_lf_GEO_scaleZ.o" "main_scene_2RN.phl[221]";
-connectAttr "angles_eyelid_rt_lower_GEO_rotateX.o" "main_scene_2RN.phl[222]";
-connectAttr "angles_eyelid_rt_lower_GEO_rotateY.o" "main_scene_2RN.phl[223]";
-connectAttr "angles_eyelid_rt_lower_GEO_rotateZ.o" "main_scene_2RN.phl[224]";
-connectAttr "angles_eyelid_rt_lower_GEO_visibility.o" "main_scene_2RN.phl[225]";
-connectAttr "angles_eyelid_rt_lower_GEO_translateX.o" "main_scene_2RN.phl[226]";
-connectAttr "angles_eyelid_rt_lower_GEO_translateY.o" "main_scene_2RN.phl[227]";
-connectAttr "angles_eyelid_rt_lower_GEO_translateZ.o" "main_scene_2RN.phl[228]";
-connectAttr "angles_eyelid_rt_lower_GEO_scaleX.o" "main_scene_2RN.phl[229]";
-connectAttr "angles_eyelid_rt_lower_GEO_scaleY.o" "main_scene_2RN.phl[230]";
-connectAttr "angles_eyelid_rt_lower_GEO_scaleZ.o" "main_scene_2RN.phl[231]";
-connectAttr "angles_eyelid_lf_upper_GEO_rotateX.o" "main_scene_2RN.phl[232]";
-connectAttr "angles_eyelid_lf_upper_GEO_rotateY.o" "main_scene_2RN.phl[233]";
-connectAttr "angles_eyelid_lf_upper_GEO_rotateZ.o" "main_scene_2RN.phl[234]";
-connectAttr "angles_eyelid_lf_upper_GEO_visibility.o" "main_scene_2RN.phl[235]";
-connectAttr "angles_eyelid_lf_upper_GEO_translateX.o" "main_scene_2RN.phl[236]";
-connectAttr "angles_eyelid_lf_upper_GEO_translateY.o" "main_scene_2RN.phl[237]";
-connectAttr "angles_eyelid_lf_upper_GEO_translateZ.o" "main_scene_2RN.phl[238]";
-connectAttr "angles_eyelid_lf_upper_GEO_scaleX.o" "main_scene_2RN.phl[239]";
-connectAttr "angles_eyelid_lf_upper_GEO_scaleY.o" "main_scene_2RN.phl[240]";
-connectAttr "angles_eyelid_lf_upper_GEO_scaleZ.o" "main_scene_2RN.phl[241]";
-connectAttr "angles_eyelid_rt_upper_GEO_rotateX.o" "main_scene_2RN.phl[242]";
-connectAttr "angles_eyelid_rt_upper_GEO_rotateY.o" "main_scene_2RN.phl[243]";
-connectAttr "angles_eyelid_rt_upper_GEO_rotateZ.o" "main_scene_2RN.phl[244]";
-connectAttr "angles_eyelid_rt_upper_GEO_visibility.o" "main_scene_2RN.phl[245]";
-connectAttr "angles_eyelid_rt_upper_GEO_translateX.o" "main_scene_2RN.phl[246]";
-connectAttr "angles_eyelid_rt_upper_GEO_translateY.o" "main_scene_2RN.phl[247]";
-connectAttr "angles_eyelid_rt_upper_GEO_translateZ.o" "main_scene_2RN.phl[248]";
-connectAttr "angles_eyelid_rt_upper_GEO_scaleX.o" "main_scene_2RN.phl[249]";
-connectAttr "angles_eyelid_rt_upper_GEO_scaleY.o" "main_scene_2RN.phl[250]";
-connectAttr "angles_eyelid_rt_upper_GEO_scaleZ.o" "main_scene_2RN.phl[251]";
-connectAttr "angles_eyelid_lf_lower_GEO_rotateX.o" "main_scene_2RN.phl[252]";
-connectAttr "angles_eyelid_lf_lower_GEO_rotateY.o" "main_scene_2RN.phl[253]";
-connectAttr "angles_eyelid_lf_lower_GEO_rotateZ.o" "main_scene_2RN.phl[254]";
-connectAttr "angles_eyelid_lf_lower_GEO_visibility.o" "main_scene_2RN.phl[255]";
-connectAttr "angles_eyelid_lf_lower_GEO_translateX.o" "main_scene_2RN.phl[256]";
-connectAttr "angles_eyelid_lf_lower_GEO_translateY.o" "main_scene_2RN.phl[257]";
-connectAttr "angles_eyelid_lf_lower_GEO_translateZ.o" "main_scene_2RN.phl[258]";
-connectAttr "angles_eyelid_lf_lower_GEO_scaleX.o" "main_scene_2RN.phl[259]";
-connectAttr "angles_eyelid_lf_lower_GEO_scaleY.o" "main_scene_2RN.phl[260]";
-connectAttr "angles_eyelid_lf_lower_GEO_scaleZ.o" "main_scene_2RN.phl[261]";
-connectAttr "angles_eye_main_CTRL_translateX.o" "main_scene_2RN.phl[262]";
-connectAttr "angles_eye_main_CTRL_translateY.o" "main_scene_2RN.phl[263]";
-connectAttr "angles_eye_main_CTRL_translateZ.o" "main_scene_2RN.phl[264]";
-connectAttr "angles_eye_main_CTRL_visibility.o" "main_scene_2RN.phl[265]";
-connectAttr "angles_eye_main_CTRL_rotateX.o" "main_scene_2RN.phl[266]";
-connectAttr "angles_eye_main_CTRL_rotateY.o" "main_scene_2RN.phl[267]";
-connectAttr "angles_eye_main_CTRL_rotateZ.o" "main_scene_2RN.phl[268]";
-connectAttr "angles_eye_main_CTRL_scaleX.o" "main_scene_2RN.phl[269]";
-connectAttr "angles_eye_main_CTRL_scaleY.o" "main_scene_2RN.phl[270]";
-connectAttr "angles_eye_main_CTRL_scaleZ.o" "main_scene_2RN.phl[271]";
-connectAttr "Look_Controller_translateX.o" "main_scene_2RN.phl[322]";
-connectAttr "Look_Controller_translateY.o" "main_scene_2RN.phl[323]";
-connectAttr "Look_Controller_translateZ.o" "main_scene_2RN.phl[324]";
-connectAttr "Look_Controller_rotateX.o" "main_scene_2RN.phl[325]";
-connectAttr "Look_Controller_rotateY.o" "main_scene_2RN.phl[326]";
-connectAttr "Look_Controller_rotateZ.o" "main_scene_2RN.phl[327]";
-connectAttr "Look_Controller_visibility.o" "main_scene_2RN.phl[328]";
-connectAttr "Look_Controller_scaleX.o" "main_scene_2RN.phl[329]";
-connectAttr "Look_Controller_scaleY.o" "main_scene_2RN.phl[330]";
-connectAttr "Look_Controller_scaleZ.o" "main_scene_2RN.phl[331]";
-connectAttr "LilBro1_Body_translateX.o" "main_scene_2RN.phl[332]";
-connectAttr "LilBro1_Body_translateY.o" "main_scene_2RN.phl[333]";
-connectAttr "LilBro1_Body_translateZ.o" "main_scene_2RN.phl[334]";
-connectAttr "LilBro1_Body_visibility.o" "main_scene_2RN.phl[335]";
-connectAttr "LilBro1_Body_rotateX.o" "main_scene_2RN.phl[336]";
-connectAttr "LilBro1_Body_rotateY.o" "main_scene_2RN.phl[337]";
-connectAttr "LilBro1_Body_rotateZ.o" "main_scene_2RN.phl[338]";
-connectAttr "LilBro1_Body_scaleX.o" "main_scene_2RN.phl[339]";
-connectAttr "LilBro1_Body_scaleY.o" "main_scene_2RN.phl[340]";
-connectAttr "LilBro1_Body_scaleZ.o" "main_scene_2RN.phl[341]";
-connectAttr "main_scene_2RN.phl[342]" ":LookdevModelEditorPanelModelPanelViewSelectedSet.dsm"
-		 -na;
-connectAttr "main_scene_2RN.phl[343]" "PxrDisney1SG.dsm" -na;
-connectAttr "groupId9.id" "main_scene_2RN.phl[344]";
-connectAttr "PxrDisney1SG.mwc" "main_scene_2RN.phl[345]";
-connectAttr "main_scene_2RN.phl[346]" "PxrDisney2SG.dsm" -na;
-connectAttr "groupId11.id" "main_scene_2RN.phl[347]";
-connectAttr "PxrDisney2SG.mwc" "main_scene_2RN.phl[348]";
-connectAttr "groupParts6.og" "main_scene_2RN.phl[349]";
-connectAttr "main_scene_2RN.phl[350]" "PxrDisney1SG.dsm" -na;
-connectAttr "groupId10.id" "main_scene_2RN.phl[351]";
-connectAttr "main_scene_2RN.phl[352]" "PxrDisney1SG.dsm" -na;
-connectAttr "groupId6.id" "main_scene_2RN.phl[353]";
-connectAttr "PxrDisney1SG.mwc" "main_scene_2RN.phl[354]";
-connectAttr "main_scene_2RN.phl[355]" "PxrDisney2SG.dsm" -na;
-connectAttr "groupId8.id" "main_scene_2RN.phl[356]";
-connectAttr "PxrDisney2SG.mwc" "main_scene_2RN.phl[357]";
-connectAttr "groupParts4.og" "main_scene_2RN.phl[358]";
-connectAttr "main_scene_2RN.phl[359]" "PxrDisney1SG.dsm" -na;
-connectAttr "groupId7.id" "main_scene_2RN.phl[360]";
-connectAttr "eyelid_lf_upper_GEO_rotateX.o" "main_scene_2RN.phl[361]";
-connectAttr "eyelid_lf_upper_GEO_rotateY.o" "main_scene_2RN.phl[362]";
-connectAttr "eyelid_lf_upper_GEO_rotateZ.o" "main_scene_2RN.phl[363]";
-connectAttr "eyelid_lf_upper_GEO_visibility.o" "main_scene_2RN.phl[364]";
-connectAttr "eyelid_lf_upper_GEO_translateX.o" "main_scene_2RN.phl[365]";
-connectAttr "eyelid_lf_upper_GEO_translateY.o" "main_scene_2RN.phl[366]";
-connectAttr "eyelid_lf_upper_GEO_translateZ.o" "main_scene_2RN.phl[367]";
-connectAttr "eyelid_lf_upper_GEO_scaleX.o" "main_scene_2RN.phl[368]";
-connectAttr "eyelid_lf_upper_GEO_scaleY.o" "main_scene_2RN.phl[369]";
-connectAttr "eyelid_lf_upper_GEO_scaleZ.o" "main_scene_2RN.phl[370]";
-connectAttr "eyelid_rt_upper_GEO_rotateX.o" "main_scene_2RN.phl[371]";
-connectAttr "eyelid_rt_upper_GEO_rotateY.o" "main_scene_2RN.phl[372]";
-connectAttr "eyelid_rt_upper_GEO_rotateZ.o" "main_scene_2RN.phl[373]";
-connectAttr "eyelid_rt_upper_GEO_visibility.o" "main_scene_2RN.phl[374]";
-connectAttr "eyelid_rt_upper_GEO_translateX.o" "main_scene_2RN.phl[375]";
-connectAttr "eyelid_rt_upper_GEO_translateY.o" "main_scene_2RN.phl[376]";
-connectAttr "eyelid_rt_upper_GEO_translateZ.o" "main_scene_2RN.phl[377]";
-connectAttr "eyelid_rt_upper_GEO_scaleX.o" "main_scene_2RN.phl[378]";
-connectAttr "eyelid_rt_upper_GEO_scaleY.o" "main_scene_2RN.phl[379]";
-connectAttr "eyelid_rt_upper_GEO_scaleZ.o" "main_scene_2RN.phl[380]";
-connectAttr "LilBro1_LOOK_translateX.o" "main_scene_2RN.phl[381]";
-connectAttr "LilBro1_LOOK_translateY.o" "main_scene_2RN.phl[382]";
-connectAttr "LilBro1_LOOK_translateZ.o" "main_scene_2RN.phl[383]";
-connectAttr "LilBro1_LOOK_visibility.o" "main_scene_2RN.phl[384]";
-connectAttr "LilBro1_LOOK_rotateX.o" "main_scene_2RN.phl[385]";
-connectAttr "LilBro1_LOOK_rotateY.o" "main_scene_2RN.phl[386]";
-connectAttr "LilBro1_LOOK_rotateZ.o" "main_scene_2RN.phl[387]";
-connectAttr "LilBro1_LOOK_scaleX.o" "main_scene_2RN.phl[388]";
-connectAttr "LilBro1_LOOK_scaleY.o" "main_scene_2RN.phl[389]";
-connectAttr "LilBro1_LOOK_scaleZ.o" "main_scene_2RN.phl[390]";
-connectAttr "LilBro1_LOOK_blendAim1.o" "main_scene_2RN.phl[391]";
-connectAttr "main_scene_2RN.phl[392]" "groupParts3.ig";
-connectAttr "main_scene_2RN.phl[393]" "groupParts5.ig";
-connectAttr "stony_rt_eyebrow_GEO_translateX.o" "main_scene_2RN.phl[272]";
-connectAttr "stony_rt_eyebrow_GEO_translateY.o" "main_scene_2RN.phl[273]";
-connectAttr "stony_rt_eyebrow_GEO_translateZ.o" "main_scene_2RN.phl[274]";
-connectAttr "stony_rt_eyebrow_GEO_rotateX.o" "main_scene_2RN.phl[275]";
-connectAttr "stony_rt_eyebrow_GEO_rotateY.o" "main_scene_2RN.phl[276]";
-connectAttr "stony_rt_eyebrow_GEO_rotateZ.o" "main_scene_2RN.phl[277]";
-connectAttr "stony_rt_eyebrow_GEO_visibility.o" "main_scene_2RN.phl[278]";
-connectAttr "stony_rt_eyebrow_GEO_scaleX.o" "main_scene_2RN.phl[279]";
-connectAttr "stony_rt_eyebrow_GEO_scaleY.o" "main_scene_2RN.phl[280]";
-connectAttr "stony_rt_eyebrow_GEO_scaleZ.o" "main_scene_2RN.phl[281]";
-connectAttr "stony_lf_eyebrow_GEO_translateX.o" "main_scene_2RN.phl[282]";
-connectAttr "stony_lf_eyebrow_GEO_translateY.o" "main_scene_2RN.phl[283]";
-connectAttr "stony_lf_eyebrow_GEO_translateZ.o" "main_scene_2RN.phl[284]";
-connectAttr "stony_lf_eyebrow_GEO_rotateX.o" "main_scene_2RN.phl[285]";
-connectAttr "stony_lf_eyebrow_GEO_rotateY.o" "main_scene_2RN.phl[286]";
-connectAttr "stony_lf_eyebrow_GEO_rotateZ.o" "main_scene_2RN.phl[287]";
-connectAttr "stony_lf_eyebrow_GEO_visibility.o" "main_scene_2RN.phl[288]";
-connectAttr "stony_lf_eyebrow_GEO_scaleX.o" "main_scene_2RN.phl[289]";
-connectAttr "stony_lf_eyebrow_GEO_scaleY.o" "main_scene_2RN.phl[290]";
-connectAttr "stony_lf_eyebrow_GEO_scaleZ.o" "main_scene_2RN.phl[291]";
-connectAttr "stony_eyelid_lf_upper_GEO2_rotateX.o" "main_scene_2RN.phl[292]";
-connectAttr "stony_eyelid_lf_upper_GEO2_rotateY.o" "main_scene_2RN.phl[293]";
-connectAttr "stony_eyelid_lf_upper_GEO2_rotateZ.o" "main_scene_2RN.phl[294]";
-connectAttr "stony_eyelid_lf_upper_GEO2_visibility.o" "main_scene_2RN.phl[295]";
-connectAttr "stony_eyelid_lf_upper_GEO2_translateX.o" "main_scene_2RN.phl[296]";
-connectAttr "stony_eyelid_lf_upper_GEO2_translateY.o" "main_scene_2RN.phl[297]";
-connectAttr "stony_eyelid_lf_upper_GEO2_translateZ.o" "main_scene_2RN.phl[298]";
-connectAttr "stony_eyelid_lf_upper_GEO2_scaleX.o" "main_scene_2RN.phl[299]";
-connectAttr "stony_eyelid_lf_upper_GEO2_scaleY.o" "main_scene_2RN.phl[300]";
-connectAttr "stony_eyelid_lf_upper_GEO2_scaleZ.o" "main_scene_2RN.phl[301]";
-connectAttr "stony_eyelid_rt_upper_GEO_rotateX.o" "main_scene_2RN.phl[302]";
-connectAttr "stony_eyelid_rt_upper_GEO_rotateY.o" "main_scene_2RN.phl[303]";
-connectAttr "stony_eyelid_rt_upper_GEO_rotateZ.o" "main_scene_2RN.phl[304]";
-connectAttr "stony_eyelid_rt_upper_GEO_visibility.o" "main_scene_2RN.phl[305]";
-connectAttr "stony_eyelid_rt_upper_GEO_translateX.o" "main_scene_2RN.phl[306]";
-connectAttr "stony_eyelid_rt_upper_GEO_translateY.o" "main_scene_2RN.phl[307]";
-connectAttr "stony_eyelid_rt_upper_GEO_translateZ.o" "main_scene_2RN.phl[308]";
-connectAttr "stony_eyelid_rt_upper_GEO_scaleX.o" "main_scene_2RN.phl[309]";
-connectAttr "stony_eyelid_rt_upper_GEO_scaleY.o" "main_scene_2RN.phl[310]";
-connectAttr "stony_eyelid_rt_upper_GEO_scaleZ.o" "main_scene_2RN.phl[311]";
-connectAttr "stony_eye_main_CTRL_translateX.o" "main_scene_2RN.phl[312]";
-connectAttr "stony_eye_main_CTRL_translateY.o" "main_scene_2RN.phl[313]";
-connectAttr "stony_eye_main_CTRL_translateZ.o" "main_scene_2RN.phl[314]";
-connectAttr "stony_eye_main_CTRL_visibility.o" "main_scene_2RN.phl[315]";
-connectAttr "stony_eye_main_CTRL_rotateX.o" "main_scene_2RN.phl[316]";
-connectAttr "stony_eye_main_CTRL_rotateY.o" "main_scene_2RN.phl[317]";
-connectAttr "stony_eye_main_CTRL_rotateZ.o" "main_scene_2RN.phl[318]";
-connectAttr "stony_eye_main_CTRL_scaleX.o" "main_scene_2RN.phl[319]";
-connectAttr "stony_eye_main_CTRL_scaleY.o" "main_scene_2RN.phl[320]";
-connectAttr "stony_eye_main_CTRL_scaleZ.o" "main_scene_2RN.phl[321]";
-connectAttr "pPlane1_translateX.o" "main_scene_2RN.phl[133]";
-connectAttr "pPlane1_translateY.o" "main_scene_2RN.phl[134]";
-connectAttr "pPlane1_translateZ.o" "main_scene_2RN.phl[135]";
-connectAttr "pPlane1_visibility.o" "main_scene_2RN.phl[136]";
-connectAttr "pPlane1_rotateX.o" "main_scene_2RN.phl[137]";
-connectAttr "pPlane1_rotateY.o" "main_scene_2RN.phl[138]";
-connectAttr "pPlane1_rotateZ.o" "main_scene_2RN.phl[139]";
-connectAttr "pPlane1_scaleX.o" "main_scene_2RN.phl[140]";
-connectAttr "pPlane1_scaleY.o" "main_scene_2RN.phl[141]";
-connectAttr "pPlane1_scaleZ.o" "main_scene_2RN.phl[142]";
-connectAttr "rock0Shape1.iog" "main_scene_2RN.phl[143]";
-connectAttr "rock0Shape2.iog" "main_scene_2RN.phl[144]";
-connectAttr "rock0Shape3.iog" "main_scene_2RN.phl[145]";
+connectAttr "eyebrow_rt_GEO_translateX.o" "main_scene_2RN.phl[356]";
+connectAttr "eyebrow_rt_GEO_translateY.o" "main_scene_2RN.phl[357]";
+connectAttr "eyebrow_rt_GEO_translateZ.o" "main_scene_2RN.phl[358]";
+connectAttr "eyebrow_rt_GEO_visibility.o" "main_scene_2RN.phl[359]";
+connectAttr "eyebrow_rt_GEO_rotateX.o" "main_scene_2RN.phl[360]";
+connectAttr "eyebrow_rt_GEO_rotateY.o" "main_scene_2RN.phl[361]";
+connectAttr "eyebrow_rt_GEO_rotateZ.o" "main_scene_2RN.phl[362]";
+connectAttr "eyebrow_rt_GEO_scaleX.o" "main_scene_2RN.phl[363]";
+connectAttr "eyebrow_rt_GEO_scaleY.o" "main_scene_2RN.phl[364]";
+connectAttr "eyebrow_rt_GEO_scaleZ.o" "main_scene_2RN.phl[365]";
+connectAttr "eyebrow_lf_GEO_translateX.o" "main_scene_2RN.phl[366]";
+connectAttr "eyebrow_lf_GEO_translateY.o" "main_scene_2RN.phl[367]";
+connectAttr "eyebrow_lf_GEO_translateZ.o" "main_scene_2RN.phl[368]";
+connectAttr "eyebrow_lf_GEO_visibility.o" "main_scene_2RN.phl[369]";
+connectAttr "eyebrow_lf_GEO_rotateX.o" "main_scene_2RN.phl[370]";
+connectAttr "eyebrow_lf_GEO_rotateY.o" "main_scene_2RN.phl[371]";
+connectAttr "eyebrow_lf_GEO_rotateZ.o" "main_scene_2RN.phl[372]";
+connectAttr "eyebrow_lf_GEO_scaleX.o" "main_scene_2RN.phl[373]";
+connectAttr "eyebrow_lf_GEO_scaleY.o" "main_scene_2RN.phl[374]";
+connectAttr "eyebrow_lf_GEO_scaleZ.o" "main_scene_2RN.phl[375]";
+connectAttr "eyelid_lf_upper_GEO_rotateX2.o" "main_scene_2RN.phl[376]";
+connectAttr "eyelid_lf_upper_GEO_rotateY2.o" "main_scene_2RN.phl[377]";
+connectAttr "eyelid_lf_upper_GEO_rotateZ2.o" "main_scene_2RN.phl[378]";
+connectAttr "eyelid_lf_upper_GEO_visibility2.o" "main_scene_2RN.phl[379]";
+connectAttr "eyelid_lf_upper_GEO_translateX2.o" "main_scene_2RN.phl[380]";
+connectAttr "eyelid_lf_upper_GEO_translateY2.o" "main_scene_2RN.phl[381]";
+connectAttr "eyelid_lf_upper_GEO_translateZ2.o" "main_scene_2RN.phl[382]";
+connectAttr "eyelid_lf_upper_GEO_scaleX2.o" "main_scene_2RN.phl[383]";
+connectAttr "eyelid_lf_upper_GEO_scaleY2.o" "main_scene_2RN.phl[384]";
+connectAttr "eyelid_lf_upper_GEO_scaleZ2.o" "main_scene_2RN.phl[385]";
+connectAttr "eyelid_rt_upper_GEO_rotateX2.o" "main_scene_2RN.phl[386]";
+connectAttr "eyelid_rt_upper_GEO_rotateY2.o" "main_scene_2RN.phl[387]";
+connectAttr "eyelid_rt_upper_GEO_rotateZ2.o" "main_scene_2RN.phl[388]";
+connectAttr "eyelid_rt_upper_GEO_visibility2.o" "main_scene_2RN.phl[389]";
+connectAttr "eyelid_rt_upper_GEO_translateX2.o" "main_scene_2RN.phl[390]";
+connectAttr "eyelid_rt_upper_GEO_translateY2.o" "main_scene_2RN.phl[391]";
+connectAttr "eyelid_rt_upper_GEO_translateZ2.o" "main_scene_2RN.phl[392]";
+connectAttr "eyelid_rt_upper_GEO_scaleX2.o" "main_scene_2RN.phl[393]";
+connectAttr "eyelid_rt_upper_GEO_scaleY2.o" "main_scene_2RN.phl[394]";
+connectAttr "eyelid_rt_upper_GEO_scaleZ2.o" "main_scene_2RN.phl[395]";
+connectAttr "main_scene_2RN.phl[396]" "main_scene_2RN.phl[397]";
+connectAttr "main_scene_2RN.phl[398]" "main_scene_2RN.phl[399]";
+connectAttr "main_scene_2RN.phl[400]" "main_scene_2RN.phl[401]";
+connectAttr "mouth_GEO_scaleX.o" "main_scene_2RN.phl[402]";
+connectAttr "mouth_GEO_scaleY.o" "main_scene_2RN.phl[403]";
+connectAttr "mouth_GEO_scaleZ.o" "main_scene_2RN.phl[404]";
+connectAttr "mouth_GEO_visibility.o" "main_scene_2RN.phl[405]";
+connectAttr "mouth_GEO_translateX.o" "main_scene_2RN.phl[406]";
+connectAttr "mouth_GEO_translateY.o" "main_scene_2RN.phl[407]";
+connectAttr "mouth_GEO_translateZ.o" "main_scene_2RN.phl[408]";
+connectAttr "mouth_GEO_rotateX.o" "main_scene_2RN.phl[409]";
+connectAttr "mouth_GEO_rotateY.o" "main_scene_2RN.phl[410]";
+connectAttr "mouth_GEO_rotateZ.o" "main_scene_2RN.phl[411]";
+connectAttr "LilBro2_Body_translateX.o" "main_scene_2RN.phl[607]";
+connectAttr "LilBro2_Body_translateY.o" "main_scene_2RN.phl[608]";
+connectAttr "LilBro2_Body_translateZ.o" "main_scene_2RN.phl[609]";
+connectAttr "LilBro2_Body_visibility.o" "main_scene_2RN.phl[610]";
+connectAttr "LilBro2_Body_rotateX.o" "main_scene_2RN.phl[611]";
+connectAttr "LilBro2_Body_rotateY.o" "main_scene_2RN.phl[612]";
+connectAttr "LilBro2_Body_rotateZ.o" "main_scene_2RN.phl[613]";
+connectAttr "LilBro2_Body_scaleX.o" "main_scene_2RN.phl[614]";
+connectAttr "LilBro2_Body_scaleY.o" "main_scene_2RN.phl[615]";
+connectAttr "LilBro2_Body_scaleZ.o" "main_scene_2RN.phl[616]";
+connectAttr "LilBro2_LOOK_translateX.o" "main_scene_2RN.phl[617]";
+connectAttr "LilBro2_LOOK_translateY.o" "main_scene_2RN.phl[618]";
+connectAttr "LilBro2_LOOK_translateZ.o" "main_scene_2RN.phl[619]";
+connectAttr "LilBro2_LOOK_visibility.o" "main_scene_2RN.phl[620]";
+connectAttr "LilBro2_LOOK_rotateX.o" "main_scene_2RN.phl[621]";
+connectAttr "LilBro2_LOOK_rotateY.o" "main_scene_2RN.phl[622]";
+connectAttr "LilBro2_LOOK_rotateZ.o" "main_scene_2RN.phl[623]";
+connectAttr "LilBro2_LOOK_scaleX.o" "main_scene_2RN.phl[624]";
+connectAttr "LilBro2_LOOK_scaleY.o" "main_scene_2RN.phl[625]";
+connectAttr "LilBro2_LOOK_scaleZ.o" "main_scene_2RN.phl[626]";
+connectAttr "eyelid_lf_upper_GEO_rotateX1.o" "main_scene_2RN.phl[627]";
+connectAttr "eyelid_lf_upper_GEO_rotateY1.o" "main_scene_2RN.phl[628]";
+connectAttr "eyelid_lf_upper_GEO_rotateZ1.o" "main_scene_2RN.phl[629]";
+connectAttr "eyelid_lf_upper_GEO_visibility1.o" "main_scene_2RN.phl[630]";
+connectAttr "eyelid_lf_upper_GEO_translateX1.o" "main_scene_2RN.phl[631]";
+connectAttr "eyelid_lf_upper_GEO_translateY1.o" "main_scene_2RN.phl[632]";
+connectAttr "eyelid_lf_upper_GEO_translateZ1.o" "main_scene_2RN.phl[633]";
+connectAttr "eyelid_lf_upper_GEO_scaleX1.o" "main_scene_2RN.phl[634]";
+connectAttr "eyelid_lf_upper_GEO_scaleY1.o" "main_scene_2RN.phl[635]";
+connectAttr "eyelid_lf_upper_GEO_scaleZ1.o" "main_scene_2RN.phl[636]";
+connectAttr "eyelid_rt_upper_GEO_rotateX1.o" "main_scene_2RN.phl[637]";
+connectAttr "eyelid_rt_upper_GEO_rotateY1.o" "main_scene_2RN.phl[638]";
+connectAttr "eyelid_rt_upper_GEO_rotateZ1.o" "main_scene_2RN.phl[639]";
+connectAttr "eyelid_rt_upper_GEO_visibility1.o" "main_scene_2RN.phl[640]";
+connectAttr "eyelid_rt_upper_GEO_translateX1.o" "main_scene_2RN.phl[641]";
+connectAttr "eyelid_rt_upper_GEO_translateY1.o" "main_scene_2RN.phl[642]";
+connectAttr "eyelid_rt_upper_GEO_translateZ1.o" "main_scene_2RN.phl[643]";
+connectAttr "eyelid_rt_upper_GEO_scaleX1.o" "main_scene_2RN.phl[644]";
+connectAttr "eyelid_rt_upper_GEO_scaleY1.o" "main_scene_2RN.phl[645]";
+connectAttr "eyelid_rt_upper_GEO_scaleZ1.o" "main_scene_2RN.phl[646]";
+connectAttr "angles_eyebrow_rt_GEO_translateX.o" "main_scene_2RN.phl[412]";
+connectAttr "angles_eyebrow_rt_GEO_translateY.o" "main_scene_2RN.phl[413]";
+connectAttr "angles_eyebrow_rt_GEO_translateZ.o" "main_scene_2RN.phl[414]";
+connectAttr "angles_eyebrow_rt_GEO_visibility.o" "main_scene_2RN.phl[415]";
+connectAttr "angles_eyebrow_rt_GEO_rotateX.o" "main_scene_2RN.phl[416]";
+connectAttr "angles_eyebrow_rt_GEO_rotateY.o" "main_scene_2RN.phl[417]";
+connectAttr "angles_eyebrow_rt_GEO_rotateZ.o" "main_scene_2RN.phl[418]";
+connectAttr "angles_eyebrow_rt_GEO_scaleX.o" "main_scene_2RN.phl[419]";
+connectAttr "angles_eyebrow_rt_GEO_scaleY.o" "main_scene_2RN.phl[420]";
+connectAttr "angles_eyebrow_rt_GEO_scaleZ.o" "main_scene_2RN.phl[421]";
+connectAttr "angles_eyebrow_lf_GEO_translateX.o" "main_scene_2RN.phl[422]";
+connectAttr "angles_eyebrow_lf_GEO_translateY.o" "main_scene_2RN.phl[423]";
+connectAttr "angles_eyebrow_lf_GEO_translateZ.o" "main_scene_2RN.phl[424]";
+connectAttr "angles_eyebrow_lf_GEO_visibility.o" "main_scene_2RN.phl[425]";
+connectAttr "angles_eyebrow_lf_GEO_rotateX.o" "main_scene_2RN.phl[426]";
+connectAttr "angles_eyebrow_lf_GEO_rotateY.o" "main_scene_2RN.phl[427]";
+connectAttr "angles_eyebrow_lf_GEO_rotateZ.o" "main_scene_2RN.phl[428]";
+connectAttr "angles_eyebrow_lf_GEO_scaleX.o" "main_scene_2RN.phl[429]";
+connectAttr "angles_eyebrow_lf_GEO_scaleY.o" "main_scene_2RN.phl[430]";
+connectAttr "angles_eyebrow_lf_GEO_scaleZ.o" "main_scene_2RN.phl[431]";
+connectAttr "angles_eyelid_rt_lower_GEO_rotateX.o" "main_scene_2RN.phl[432]";
+connectAttr "angles_eyelid_rt_lower_GEO_rotateY.o" "main_scene_2RN.phl[433]";
+connectAttr "angles_eyelid_rt_lower_GEO_rotateZ.o" "main_scene_2RN.phl[434]";
+connectAttr "angles_eyelid_rt_lower_GEO_visibility.o" "main_scene_2RN.phl[435]";
+connectAttr "angles_eyelid_rt_lower_GEO_translateX.o" "main_scene_2RN.phl[436]";
+connectAttr "angles_eyelid_rt_lower_GEO_translateY.o" "main_scene_2RN.phl[437]";
+connectAttr "angles_eyelid_rt_lower_GEO_translateZ.o" "main_scene_2RN.phl[438]";
+connectAttr "angles_eyelid_rt_lower_GEO_scaleX.o" "main_scene_2RN.phl[439]";
+connectAttr "angles_eyelid_rt_lower_GEO_scaleY.o" "main_scene_2RN.phl[440]";
+connectAttr "angles_eyelid_rt_lower_GEO_scaleZ.o" "main_scene_2RN.phl[441]";
+connectAttr "angles_eyelid_lf_upper_GEO_rotateX.o" "main_scene_2RN.phl[442]";
+connectAttr "angles_eyelid_lf_upper_GEO_rotateY.o" "main_scene_2RN.phl[443]";
+connectAttr "angles_eyelid_lf_upper_GEO_rotateZ.o" "main_scene_2RN.phl[444]";
+connectAttr "angles_eyelid_lf_upper_GEO_visibility.o" "main_scene_2RN.phl[445]";
+connectAttr "angles_eyelid_lf_upper_GEO_translateX.o" "main_scene_2RN.phl[446]";
+connectAttr "angles_eyelid_lf_upper_GEO_translateY.o" "main_scene_2RN.phl[447]";
+connectAttr "angles_eyelid_lf_upper_GEO_translateZ.o" "main_scene_2RN.phl[448]";
+connectAttr "angles_eyelid_lf_upper_GEO_scaleX.o" "main_scene_2RN.phl[449]";
+connectAttr "angles_eyelid_lf_upper_GEO_scaleY.o" "main_scene_2RN.phl[450]";
+connectAttr "angles_eyelid_lf_upper_GEO_scaleZ.o" "main_scene_2RN.phl[451]";
+connectAttr "angles_eyelid_rt_upper_GEO_rotateX.o" "main_scene_2RN.phl[452]";
+connectAttr "angles_eyelid_rt_upper_GEO_rotateY.o" "main_scene_2RN.phl[453]";
+connectAttr "angles_eyelid_rt_upper_GEO_rotateZ.o" "main_scene_2RN.phl[454]";
+connectAttr "angles_eyelid_rt_upper_GEO_visibility.o" "main_scene_2RN.phl[455]";
+connectAttr "angles_eyelid_rt_upper_GEO_translateX.o" "main_scene_2RN.phl[456]";
+connectAttr "angles_eyelid_rt_upper_GEO_translateY.o" "main_scene_2RN.phl[457]";
+connectAttr "angles_eyelid_rt_upper_GEO_translateZ.o" "main_scene_2RN.phl[458]";
+connectAttr "angles_eyelid_rt_upper_GEO_scaleX.o" "main_scene_2RN.phl[459]";
+connectAttr "angles_eyelid_rt_upper_GEO_scaleY.o" "main_scene_2RN.phl[460]";
+connectAttr "angles_eyelid_rt_upper_GEO_scaleZ.o" "main_scene_2RN.phl[461]";
+connectAttr "angles_eyelid_lf_lower_GEO_rotateX.o" "main_scene_2RN.phl[462]";
+connectAttr "angles_eyelid_lf_lower_GEO_rotateY.o" "main_scene_2RN.phl[463]";
+connectAttr "angles_eyelid_lf_lower_GEO_rotateZ.o" "main_scene_2RN.phl[464]";
+connectAttr "angles_eyelid_lf_lower_GEO_visibility.o" "main_scene_2RN.phl[465]";
+connectAttr "angles_eyelid_lf_lower_GEO_translateX.o" "main_scene_2RN.phl[466]";
+connectAttr "angles_eyelid_lf_lower_GEO_translateY.o" "main_scene_2RN.phl[467]";
+connectAttr "angles_eyelid_lf_lower_GEO_translateZ.o" "main_scene_2RN.phl[468]";
+connectAttr "angles_eyelid_lf_lower_GEO_scaleX.o" "main_scene_2RN.phl[469]";
+connectAttr "angles_eyelid_lf_lower_GEO_scaleY.o" "main_scene_2RN.phl[470]";
+connectAttr "angles_eyelid_lf_lower_GEO_scaleZ.o" "main_scene_2RN.phl[471]";
+connectAttr "angles_eye_main_CTRL_translateX.o" "main_scene_2RN.phl[472]";
+connectAttr "angles_eye_main_CTRL_translateY.o" "main_scene_2RN.phl[473]";
+connectAttr "angles_eye_main_CTRL_translateZ.o" "main_scene_2RN.phl[474]";
+connectAttr "angles_eye_main_CTRL_visibility.o" "main_scene_2RN.phl[475]";
+connectAttr "angles_eye_main_CTRL_rotateX.o" "main_scene_2RN.phl[476]";
+connectAttr "angles_eye_main_CTRL_rotateY.o" "main_scene_2RN.phl[477]";
+connectAttr "angles_eye_main_CTRL_rotateZ.o" "main_scene_2RN.phl[478]";
+connectAttr "angles_eye_main_CTRL_scaleX.o" "main_scene_2RN.phl[479]";
+connectAttr "angles_eye_main_CTRL_scaleY.o" "main_scene_2RN.phl[480]";
+connectAttr "angles_eye_main_CTRL_scaleZ.o" "main_scene_2RN.phl[481]";
+connectAttr "Look_Controller_translateX.o" "main_scene_2RN.phl[532]";
+connectAttr "Look_Controller_translateY.o" "main_scene_2RN.phl[533]";
+connectAttr "Look_Controller_translateZ.o" "main_scene_2RN.phl[534]";
+connectAttr "Look_Controller_rotateX.o" "main_scene_2RN.phl[535]";
+connectAttr "Look_Controller_rotateY.o" "main_scene_2RN.phl[536]";
+connectAttr "Look_Controller_rotateZ.o" "main_scene_2RN.phl[537]";
+connectAttr "Look_Controller_visibility.o" "main_scene_2RN.phl[538]";
+connectAttr "Look_Controller_scaleX.o" "main_scene_2RN.phl[539]";
+connectAttr "Look_Controller_scaleY.o" "main_scene_2RN.phl[540]";
+connectAttr "Look_Controller_scaleZ.o" "main_scene_2RN.phl[541]";
+connectAttr "LilBro1_Body_translateX.o" "main_scene_2RN.phl[542]";
+connectAttr "LilBro1_Body_translateY.o" "main_scene_2RN.phl[543]";
+connectAttr "LilBro1_Body_translateZ.o" "main_scene_2RN.phl[544]";
+connectAttr "LilBro1_Body_visibility.o" "main_scene_2RN.phl[545]";
+connectAttr "LilBro1_Body_rotateX.o" "main_scene_2RN.phl[546]";
+connectAttr "LilBro1_Body_rotateY.o" "main_scene_2RN.phl[547]";
+connectAttr "LilBro1_Body_rotateZ.o" "main_scene_2RN.phl[548]";
+connectAttr "LilBro1_Body_scaleX.o" "main_scene_2RN.phl[549]";
+connectAttr "LilBro1_Body_scaleY.o" "main_scene_2RN.phl[550]";
+connectAttr "LilBro1_Body_scaleZ.o" "main_scene_2RN.phl[551]";
+connectAttr "main_scene_2RN.phl[552]" "PxrDisney1SG.dsm" -na;
+connectAttr "groupId9.id" "main_scene_2RN.phl[553]";
+connectAttr "PxrDisney1SG.mwc" "main_scene_2RN.phl[554]";
+connectAttr "main_scene_2RN.phl[555]" "PxrDisney2SG.dsm" -na;
+connectAttr "groupId11.id" "main_scene_2RN.phl[556]";
+connectAttr "PxrDisney2SG.mwc" "main_scene_2RN.phl[557]";
+connectAttr "groupParts6.og" "main_scene_2RN.phl[558]";
+connectAttr "main_scene_2RN.phl[559]" "main_scene_2RN.phl[560]";
+connectAttr "main_scene_2RN.phl[561]" "PxrDisney1SG.dsm" -na;
+connectAttr "groupId10.id" "main_scene_2RN.phl[562]";
+connectAttr "main_scene_2RN.phl[563]" "PxrDisney1SG.dsm" -na;
+connectAttr "groupId6.id" "main_scene_2RN.phl[564]";
+connectAttr "PxrDisney1SG.mwc" "main_scene_2RN.phl[565]";
+connectAttr "main_scene_2RN.phl[566]" "PxrDisney2SG.dsm" -na;
+connectAttr "groupId8.id" "main_scene_2RN.phl[567]";
+connectAttr "PxrDisney2SG.mwc" "main_scene_2RN.phl[568]";
+connectAttr "groupParts4.og" "main_scene_2RN.phl[569]";
+connectAttr "main_scene_2RN.phl[570]" "main_scene_2RN.phl[571]";
+connectAttr "main_scene_2RN.phl[572]" "PxrDisney1SG.dsm" -na;
+connectAttr "groupId7.id" "main_scene_2RN.phl[573]";
+connectAttr "eyelid_lf_upper_GEO_rotateX.o" "main_scene_2RN.phl[574]";
+connectAttr "eyelid_lf_upper_GEO_rotateY.o" "main_scene_2RN.phl[575]";
+connectAttr "eyelid_lf_upper_GEO_rotateZ.o" "main_scene_2RN.phl[576]";
+connectAttr "eyelid_lf_upper_GEO_visibility.o" "main_scene_2RN.phl[577]";
+connectAttr "eyelid_lf_upper_GEO_translateX.o" "main_scene_2RN.phl[578]";
+connectAttr "eyelid_lf_upper_GEO_translateY.o" "main_scene_2RN.phl[579]";
+connectAttr "eyelid_lf_upper_GEO_translateZ.o" "main_scene_2RN.phl[580]";
+connectAttr "eyelid_lf_upper_GEO_scaleX.o" "main_scene_2RN.phl[581]";
+connectAttr "eyelid_lf_upper_GEO_scaleY.o" "main_scene_2RN.phl[582]";
+connectAttr "eyelid_lf_upper_GEO_scaleZ.o" "main_scene_2RN.phl[583]";
+connectAttr "eyelid_rt_upper_GEO_rotateX.o" "main_scene_2RN.phl[584]";
+connectAttr "eyelid_rt_upper_GEO_rotateY.o" "main_scene_2RN.phl[585]";
+connectAttr "eyelid_rt_upper_GEO_rotateZ.o" "main_scene_2RN.phl[586]";
+connectAttr "eyelid_rt_upper_GEO_visibility.o" "main_scene_2RN.phl[587]";
+connectAttr "eyelid_rt_upper_GEO_translateX.o" "main_scene_2RN.phl[588]";
+connectAttr "eyelid_rt_upper_GEO_translateY.o" "main_scene_2RN.phl[589]";
+connectAttr "eyelid_rt_upper_GEO_translateZ.o" "main_scene_2RN.phl[590]";
+connectAttr "eyelid_rt_upper_GEO_scaleX.o" "main_scene_2RN.phl[591]";
+connectAttr "eyelid_rt_upper_GEO_scaleY.o" "main_scene_2RN.phl[592]";
+connectAttr "eyelid_rt_upper_GEO_scaleZ.o" "main_scene_2RN.phl[593]";
+connectAttr "LilBro1_LOOK_translateX.o" "main_scene_2RN.phl[594]";
+connectAttr "LilBro1_LOOK_translateY.o" "main_scene_2RN.phl[595]";
+connectAttr "LilBro1_LOOK_translateZ.o" "main_scene_2RN.phl[596]";
+connectAttr "LilBro1_LOOK_visibility.o" "main_scene_2RN.phl[597]";
+connectAttr "LilBro1_LOOK_rotateX.o" "main_scene_2RN.phl[598]";
+connectAttr "LilBro1_LOOK_rotateY.o" "main_scene_2RN.phl[599]";
+connectAttr "LilBro1_LOOK_rotateZ.o" "main_scene_2RN.phl[600]";
+connectAttr "LilBro1_LOOK_scaleX.o" "main_scene_2RN.phl[601]";
+connectAttr "LilBro1_LOOK_scaleY.o" "main_scene_2RN.phl[602]";
+connectAttr "LilBro1_LOOK_scaleZ.o" "main_scene_2RN.phl[603]";
+connectAttr "LilBro1_LOOK_blendAim1.o" "main_scene_2RN.phl[604]";
+connectAttr "main_scene_2RN.phl[605]" "groupParts3.ig";
+connectAttr "main_scene_2RN.phl[606]" "groupParts5.ig";
+connectAttr "stony_rt_eyebrow_GEO_translateX.o" "main_scene_2RN.phl[482]";
+connectAttr "stony_rt_eyebrow_GEO_translateY.o" "main_scene_2RN.phl[483]";
+connectAttr "stony_rt_eyebrow_GEO_translateZ.o" "main_scene_2RN.phl[484]";
+connectAttr "stony_rt_eyebrow_GEO_rotateX.o" "main_scene_2RN.phl[485]";
+connectAttr "stony_rt_eyebrow_GEO_rotateY.o" "main_scene_2RN.phl[486]";
+connectAttr "stony_rt_eyebrow_GEO_rotateZ.o" "main_scene_2RN.phl[487]";
+connectAttr "stony_rt_eyebrow_GEO_visibility.o" "main_scene_2RN.phl[488]";
+connectAttr "stony_rt_eyebrow_GEO_scaleX.o" "main_scene_2RN.phl[489]";
+connectAttr "stony_rt_eyebrow_GEO_scaleY.o" "main_scene_2RN.phl[490]";
+connectAttr "stony_rt_eyebrow_GEO_scaleZ.o" "main_scene_2RN.phl[491]";
+connectAttr "stony_lf_eyebrow_GEO_translateX.o" "main_scene_2RN.phl[492]";
+connectAttr "stony_lf_eyebrow_GEO_translateY.o" "main_scene_2RN.phl[493]";
+connectAttr "stony_lf_eyebrow_GEO_translateZ.o" "main_scene_2RN.phl[494]";
+connectAttr "stony_lf_eyebrow_GEO_rotateX.o" "main_scene_2RN.phl[495]";
+connectAttr "stony_lf_eyebrow_GEO_rotateY.o" "main_scene_2RN.phl[496]";
+connectAttr "stony_lf_eyebrow_GEO_rotateZ.o" "main_scene_2RN.phl[497]";
+connectAttr "stony_lf_eyebrow_GEO_visibility.o" "main_scene_2RN.phl[498]";
+connectAttr "stony_lf_eyebrow_GEO_scaleX.o" "main_scene_2RN.phl[499]";
+connectAttr "stony_lf_eyebrow_GEO_scaleY.o" "main_scene_2RN.phl[500]";
+connectAttr "stony_lf_eyebrow_GEO_scaleZ.o" "main_scene_2RN.phl[501]";
+connectAttr "stony_eyelid_lf_upper_GEO2_rotateX.o" "main_scene_2RN.phl[502]";
+connectAttr "stony_eyelid_lf_upper_GEO2_rotateY.o" "main_scene_2RN.phl[503]";
+connectAttr "stony_eyelid_lf_upper_GEO2_rotateZ.o" "main_scene_2RN.phl[504]";
+connectAttr "stony_eyelid_lf_upper_GEO2_visibility.o" "main_scene_2RN.phl[505]";
+connectAttr "stony_eyelid_lf_upper_GEO2_translateX.o" "main_scene_2RN.phl[506]";
+connectAttr "stony_eyelid_lf_upper_GEO2_translateY.o" "main_scene_2RN.phl[507]";
+connectAttr "stony_eyelid_lf_upper_GEO2_translateZ.o" "main_scene_2RN.phl[508]";
+connectAttr "stony_eyelid_lf_upper_GEO2_scaleX.o" "main_scene_2RN.phl[509]";
+connectAttr "stony_eyelid_lf_upper_GEO2_scaleY.o" "main_scene_2RN.phl[510]";
+connectAttr "stony_eyelid_lf_upper_GEO2_scaleZ.o" "main_scene_2RN.phl[511]";
+connectAttr "stony_eyelid_rt_upper_GEO_rotateX.o" "main_scene_2RN.phl[512]";
+connectAttr "stony_eyelid_rt_upper_GEO_rotateY.o" "main_scene_2RN.phl[513]";
+connectAttr "stony_eyelid_rt_upper_GEO_rotateZ.o" "main_scene_2RN.phl[514]";
+connectAttr "stony_eyelid_rt_upper_GEO_visibility.o" "main_scene_2RN.phl[515]";
+connectAttr "stony_eyelid_rt_upper_GEO_translateX.o" "main_scene_2RN.phl[516]";
+connectAttr "stony_eyelid_rt_upper_GEO_translateY.o" "main_scene_2RN.phl[517]";
+connectAttr "stony_eyelid_rt_upper_GEO_translateZ.o" "main_scene_2RN.phl[518]";
+connectAttr "stony_eyelid_rt_upper_GEO_scaleX.o" "main_scene_2RN.phl[519]";
+connectAttr "stony_eyelid_rt_upper_GEO_scaleY.o" "main_scene_2RN.phl[520]";
+connectAttr "stony_eyelid_rt_upper_GEO_scaleZ.o" "main_scene_2RN.phl[521]";
+connectAttr "stony_eye_main_CTRL_translateX.o" "main_scene_2RN.phl[522]";
+connectAttr "stony_eye_main_CTRL_translateY.o" "main_scene_2RN.phl[523]";
+connectAttr "stony_eye_main_CTRL_translateZ.o" "main_scene_2RN.phl[524]";
+connectAttr "stony_eye_main_CTRL_visibility.o" "main_scene_2RN.phl[525]";
+connectAttr "stony_eye_main_CTRL_rotateX.o" "main_scene_2RN.phl[526]";
+connectAttr "stony_eye_main_CTRL_rotateY.o" "main_scene_2RN.phl[527]";
+connectAttr "stony_eye_main_CTRL_rotateZ.o" "main_scene_2RN.phl[528]";
+connectAttr "stony_eye_main_CTRL_scaleX.o" "main_scene_2RN.phl[529]";
+connectAttr "stony_eye_main_CTRL_scaleY.o" "main_scene_2RN.phl[530]";
+connectAttr "stony_eye_main_CTRL_scaleZ.o" "main_scene_2RN.phl[531]";
+connectAttr "pPlane1_translateX.o" "main_scene_2RN.phl[343]";
+connectAttr "pPlane1_translateY.o" "main_scene_2RN.phl[344]";
+connectAttr "pPlane1_translateZ.o" "main_scene_2RN.phl[345]";
+connectAttr "pPlane1_visibility.o" "main_scene_2RN.phl[346]";
+connectAttr "pPlane1_rotateX.o" "main_scene_2RN.phl[347]";
+connectAttr "pPlane1_rotateY.o" "main_scene_2RN.phl[348]";
+connectAttr "pPlane1_rotateZ.o" "main_scene_2RN.phl[349]";
+connectAttr "pPlane1_scaleX.o" "main_scene_2RN.phl[350]";
+connectAttr "pPlane1_scaleY.o" "main_scene_2RN.phl[351]";
+connectAttr "pPlane1_scaleZ.o" "main_scene_2RN.phl[352]";
+connectAttr "rock0Shape1.iog" "main_scene_2RN.phl[353]";
+connectAttr "rock0Shape2.iog" "main_scene_2RN.phl[354]";
+connectAttr "rock0Shape3.iog" "main_scene_2RN.phl[355]";
 connectAttr "persp1_rotateX.o" "persp1.rx" -l on;
 connectAttr "persp1_rotateY.o" "persp1.ry" -l on;
 connectAttr "persp1_rotateZ.o" "persp1.rz" -l on;
@@ -8357,9 +8374,8 @@ connectAttr ":miDefaultOptions.msg" ":mentalrayItemsList.opt" -na;
 connectAttr ":miDefaultFramebuffer.msg" ":mentalrayItemsList.fb" -na;
 connectAttr ":miDefaultOptions.msg" ":mentalrayGlobals.opt";
 connectAttr ":miDefaultFramebuffer.msg" ":mentalrayGlobals.fb";
-connectAttr "main_scene_2RN.phl[119]" "main_scene_2RN.phl[120]";
-connectAttr "main_scene_2RN.phl[131]" "main_scene_2RN.phl[132]";
 connectAttr "sharedReferenceNode.sr" "main_scene_2RN.sr";
+connectAttr "_UNKNOWN_REF_NODE_.ur" "main_scene_2RN.ur";
 connectAttr ":defaultRenderGlobals.msg" "mtorPartition.rgcnx";
 connectAttr "lambert2.oc" "lambert2SG.ss";
 connectAttr "lambert2SG.msg" "materialInfo1.sg";
